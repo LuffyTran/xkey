@@ -32,6 +32,8 @@ final class SecureInputMonitor: @unchecked Sendable {
     private let presentationEnabled: () -> Bool
     private let deliverOnMain: (@escaping @Sendable () -> Void) -> Void
     private let onTransition: (SecureInputTransition) -> Void
+    private let activationDelay: TimeInterval
+    private let uptime: () -> TimeInterval
     private let stateQueue = DispatchQueue(label: "com.codetay.XKey.secure-input.state")
     private let deliveryQueue = DispatchQueue(label: "com.codetay.XKey.secure-input.delivery")
     private let stateQueueKey = DispatchSpecificKey<UInt8>()
@@ -49,6 +51,14 @@ final class SecureInputMonitor: @unchecked Sendable {
     /// supersedes the reminding one cannot swallow the reminder.
     private var pendingRemind = false
     private var settleWorkItem: DispatchWorkItem?
+    /// Uptime of the first raw "on" sample of the current streak; nil while raw is off.
+    private var rawActiveSince: TimeInterval?
+
+    /// Warp flips Secure Input on for 0.2-2.6s every ~10s without any password prompt
+    /// (measured with a 2ms sampler). Reporting those as holders makes the toast pop up
+    /// during normal typing, so production hosts only report a holder that persists
+    /// this long. A real holder (password field, 1Password) outlasts it.
+    static let productionActivationDelay: TimeInterval = 3
 
     init(
         detector: SecureInputDetecting,
@@ -58,6 +68,8 @@ final class SecureInputMonitor: @unchecked Sendable {
         ownsPresentation: @escaping () -> Bool,
         presentationEnabled: @escaping () -> Bool = { true },
         deliverOnMain: ((@escaping @Sendable () -> Void) -> Void)? = nil,
+        activationDelay: TimeInterval = 0,
+        uptime: @escaping () -> TimeInterval = { ProcessInfo.processInfo.systemUptime },
         onTransition: @escaping (SecureInputTransition) -> Void
     ) {
         self.detector = detector
@@ -67,6 +79,8 @@ final class SecureInputMonitor: @unchecked Sendable {
         self.ownsPresentation = ownsPresentation
         self.presentationEnabled = presentationEnabled
         self.deliverOnMain = deliverOnMain ?? SecureInputMonitor.mainDelivery
+        self.activationDelay = activationDelay
+        self.uptime = uptime
         self.onTransition = onTransition
         currentObservation = .inactive
         stateQueue.setSpecific(key: stateQueueKey, value: 1)
@@ -85,7 +99,7 @@ final class SecureInputMonitor: @unchecked Sendable {
                 return SecureInputEvaluation(observation: currentObservation, transition: nil)
             }
 
-            let observation = detector.observation
+            let observation = confirmed(detector.observation)
             let transition = stateMachine.evaluate(observation)
             // Hot path (every IMKit keystroke, every poll tick): off, still off, nothing
             // shown or pending to hide, so a delivery would only hop to main and do nothing.
@@ -107,6 +121,24 @@ final class SecureInputMonitor: @unchecked Sendable {
 
             return SecureInputEvaluation(observation: observation, transition: transition)
         }
+    }
+
+    /// Holds a raw "on" sample back as inactive until it has lasted `activationDelay`,
+    /// and schedules the sample that will confirm or drop it. Off is reported at once.
+    private func confirmed(_ raw: SecureInputObservation) -> SecureInputObservation {
+        guard activationDelay > 0 else { return raw }
+        guard raw.isEnabled else {
+            rawActiveSince = nil
+            return raw
+        }
+        let now = uptime()
+        if rawActiveSince == nil {
+            rawActiveSince = now
+            DispatchQueue.main.asyncAfter(deadline: .now() + activationDelay + 0.05) { [weak self] in
+                self?.evaluate()
+            }
+        }
+        return now - (rawActiveSince ?? now) >= activationDelay ? raw : .inactive
     }
 
     /// Reminder for an app switch or focus move, sampled once the move has settled.

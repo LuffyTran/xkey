@@ -82,6 +82,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         presentationEnabled: { [weak self] in
             self?.statusBarManager?.viewModel.isVietnameseEnabled ?? false
         },
+        activationDelay: SecureInputMonitor.productionActivationDelay,
         onTransition: { [weak self] transition in
             guard let self else { return }
             switch transition {

@@ -117,6 +117,52 @@ final class SecureInputMonitorTests: XCTestCase {
         XCTAssertEqual(presenter.hideCount, 0)
     }
 
+    func testActivationDelayDropsBlipShorterThanDelay() {
+        let detector = Detector()
+        let presenter = Presenter()
+        let transitions = TransitionRecorder()
+        var clock: TimeInterval = 100
+        let monitor = makeMonitor(detector: detector, presenter: presenter,
+                                  transitions: transitions,
+                                  activationDelay: 3, uptime: { clock })
+
+        detector.observation = observation(pid: 7, name: "Warp")
+        XCTAssertFalse(monitor.evaluate().isActive)
+        clock += 0.2
+        detector.observation = .inactive
+        monitor.evaluate()
+        // A later blip starts a fresh streak instead of inheriting the first one.
+        clock += 10
+        detector.observation = observation(pid: 7, name: "Warp")
+        XCTAssertFalse(monitor.evaluate(remind: true).isActive)
+        monitor.waitForPendingDeliveries()
+
+        XCTAssertEqual(presenter.shownAppNames, [])
+        XCTAssertEqual(transitions.values, [])
+    }
+
+    func testActivationDelayReportsHolderThatPersists() {
+        let detector = Detector()
+        let presenter = Presenter()
+        let transitions = TransitionRecorder()
+        var clock: TimeInterval = 100
+        let monitor = makeMonitor(detector: detector, presenter: presenter,
+                                  transitions: transitions,
+                                  activationDelay: 3, uptime: { clock })
+
+        detector.observation = observation(pid: 101, name: "1Password")
+        XCTAssertFalse(monitor.evaluate().isActive)
+        clock += 3.1
+        XCTAssertTrue(monitor.evaluate().isActive)
+        monitor.waitForPendingDeliveries()
+        detector.observation = .inactive
+        XCTAssertFalse(monitor.evaluate().isActive)
+        monitor.waitForPendingDeliveries()
+
+        XCTAssertEqual(presenter.shownAppNames, ["1Password"])
+        XCTAssertEqual(presenter.hideCount, 1)
+    }
+
     func testRemindSurvivesASupersedingEvaluationWithoutRemind() {
         let detector = Detector()
         let presenter = Presenter()
@@ -404,7 +450,9 @@ final class SecureInputMonitorTests: XCTestCase {
         capabilities: XKey.HostCapabilities = .xkeyIM,
         ownsPresentation: @escaping () -> Bool = { true },
         transitions: TransitionRecorder,
-        deliver: @escaping (@escaping @Sendable () -> Void) -> Void = { $0() }
+        deliver: @escaping (@escaping @Sendable () -> Void) -> Void = { $0() },
+        activationDelay: TimeInterval = 0,
+        uptime: @escaping () -> TimeInterval = { ProcessInfo.processInfo.systemUptime }
     ) -> SecureInputMonitor {
         SecureInputMonitor(
             detector: detector,
@@ -413,6 +461,8 @@ final class SecureInputMonitorTests: XCTestCase {
             presenter: presenter,
             ownsPresentation: ownsPresentation,
             deliverOnMain: deliver,
+            activationDelay: activationDelay,
+            uptime: uptime,
             onTransition: { transitions.append($0) }
         )
     }

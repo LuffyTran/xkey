@@ -37,6 +37,7 @@ final class TapController {
             presenter: SecureInputOverlay.shared,
             ownsPresentation: { [weak self] in self?.activation.isActive == true },
             presentationEnabled: { SharedSettings.shared.vietnameseEnabled },
+            activationDelay: SecureInputMonitor.productionActivationDelay,
             onTransition: { transition in
                 switch transition {
                 case .becameActive(let observation), .holderChanged(let observation):
