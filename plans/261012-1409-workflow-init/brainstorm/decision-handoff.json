@@ -1,0 +1,117 @@
+{
+  "version": "1.0",
+  "work_item_id": "261012-1409-workflow-init",
+  "status": "draft",
+  "handoff_status": "draft",
+  "problem_statement": "",
+  "goals": [],
+  "scope_in": [],
+  "scope_out": [],
+  "constraints": [],
+  "chosen_direction": "",
+  "architecture_decisions": [],
+  "ui_decisions": [],
+  "information_architecture": [],
+  "sitemap": [],
+  "screen_inventory": [],
+  "primary_user_flows": [],
+  "interaction_contract": [],
+  "concept_options": [],
+  "decision_checkpoints": [],
+  "design_system": "",
+  "responsive_strategy": "",
+  "accessibility_constraints": [],
+  "state_matrix": [],
+  "product_domain": "",
+  "primary_user_archetypes": [],
+  "primary_jobs": [],
+  "information_architecture_details": {
+    "navigation_model": "",
+    "entry_points": [],
+    "primary_zones": [],
+    "notes": []
+  },
+  "interaction_contract_details": {
+    "buttons": [],
+    "modals": [],
+    "notifications": [],
+    "state_model": [],
+    "contract_notes": []
+  },
+  "selected_concept": {
+    "name": "",
+    "description": "",
+    "rationale": ""
+  },
+  "rejected_concepts": [],
+  "concept_rationale": "",
+  "ui_readiness": {
+    "scope_detected": false,
+    "level": "not_applicable",
+    "enforcement_mode": "warning-only",
+    "required_fields": [
+      "information_architecture",
+      "sitemap",
+      "screen_inventory",
+      "primary_user_flows",
+      "interaction_contract",
+      "concept_options"
+    ],
+    "ready_fields": [],
+    "missing_fields": [],
+    "warnings": [],
+    "warning_count": 0
+  },
+  "ui_readiness_warnings": [],
+  "dependencies": [],
+  "test_strategy": "",
+  "tradeoffs": [],
+  "acceptance_criteria": [],
+  "risks": [],
+  "open_questions": [
+    "Confirm explicit problem statement and expected business outcome.",
+    "Confirm in-scope vs out-of-scope boundaries for first delivery.",
+    "Confirm constraints: timeline, compliance, risk tolerance, and budget.",
+    "Confirm module boundaries and ownership map for the first delivery slice.",
+    "Confirm canonical local startup command with prerequisites.",
+    "Clarify unknown: Source code contents: no Swift file bodies were visible, only the file list, so module responsibilities are inferred from names and the README.",
+    "Clarify unknown: Whether XKeyTests has real tests, what they cover, and whether the XKey scheme runs them.",
+    "Clarify unknown: Whether CI (GitHub Actions) exists, and how releases, notarization and the auto-update feed are produced."
+  ],
+  "sources": [
+    "docs/project-context.md",
+    "plans/261012-1409-workflow-init/brainstorm/brainstorm-v01.md",
+    "plans/project-scan-report.json"
+  ],
+  "approved_by": "",
+  "approved_at": "",
+  "updated_at": "2026-10-12T07:10:33+00:00",
+  "created_at": "2026-10-12T07:09:48+00:00",
+  "brainstorm_recommendation": {
+    "recommended_depth": "basic",
+    "recommended_session_pattern": "single-loop (problem/scope/constraints + acceptance criteria)",
+    "score": 4,
+    "confidence": 0.78,
+    "factors": [
+      "[+2] missing_information=9",
+      "[+1] repository_index_entries=30",
+      "[+1] architecture boundaries are still mixed/uncertain"
+    ],
+    "required_clarifications": [
+      "Clarify unknown: Source code contents: no Swift file bodies were visible, only the file list, so module responsibilities are inferred from names and the README.",
+      "Clarify unknown: Whether XKeyTests has real tests, what they cover, and whether the XKey scheme runs them.",
+      "Clarify unknown: Whether CI (GitHub Actions) exists, and how releases, notarization and the auto-update feed are produced.",
+      "Confirm module boundaries and ownership map for the first delivery slice.",
+      "Confirm canonical local startup command with prerequisites."
+    ],
+    "requires_user_confirmation": true,
+    "decision_status": "pending_user_confirmation",
+    "policy": "advisory-only",
+    "generated_at": "2026-10-12T07:10:33+00:00"
+  },
+  "requirement_confirmation_required": true,
+  "requirement_confirmation_status": "pending",
+  "inference_policy": "advisory-only",
+  "inferred_problem_statement": "**B\u1ed9 g\u00f5 ti\u1ebfng Vi\u1ec7t hi\u1ec7n \u0111\u1ea1i cho macOS**",
+  "inferred_chosen_direction": "Architecture appears mixed or monolithic; deeper scan may be required for precise boundaries."
+}

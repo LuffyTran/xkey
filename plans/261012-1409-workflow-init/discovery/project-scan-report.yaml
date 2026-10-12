@@ -1,0 +1,779 @@
+version: '1.0'
+mode: deep
+status: completed
+root_path: /Volumes/Projects/github-lufftran/xkey
+started_at: '2026-10-12T07:09:48+00:00'
+updated_at: '2026-10-12T07:10:33+00:00'
+visited_paths:
+- AGENTS.md
+- CLAUDE.md
+- LICENSE
+- QWERTZ_SUPPORT.md
+- README.en.md
+- README.md
+- Version.xcconfig
+- build_release.sh
+- xkey-panel.png
+- xkey.png
+- Shared/AXHelper.swift
+- Shared/AppBehaviorDetector.swift
+- Shared/DebugLogger.swift
+- Shared/TapEnvironment.swift
+- Shared/TapEventSource.swift
+- Shared/TranslationLanguage.swift
+- Shared/InputSession/AppPolicyRuntime.swift
+- Shared/InputSession/DictionaryRuntime.swift
+- Shared/InputSession/HostCapabilities.swift
+- Shared/InputSession/HostCommand.swift
+- Shared/InputSession/HostCommandRouter.swift
+- Shared/InputSession/InputAction.swift
+- Shared/InputSession/InputEvent.swift
+- Shared/InputSession/InputSession.swift
+- Shared/InputSession/RuntimePreferences.swift
+- Shared/InputSession/SecureInputDetector.swift
+- Shared/InputSession/SecureInputMonitor.swift
+- Shared/InputSession/SettingsReloadDebouncer.swift
+- Tools/generate_menu_icons.swift
+- XKey/Info.plist
+- XKey/Localizable.xcstrings
+- XKey/XKey.entitlements
+- XKey/XKeyRelease.entitlements
+- XKey/App/AppDelegate.swift
+- XKey/App/ServicesProvider.swift
+- XKey/App/SparkleUpdateDelegate.swift
+- XKey/App/UserDictionaryService.swift
+- XKey/App/XKeyApp.swift
+- XKey/App/XKeyIMUpdateManager.swift
+- XKey/Assets.xcassets/Contents.json
+- XKey/EventHandling/AdvancedInjectionMethods.swift
+- XKey/EventHandling/CGEventTransport.swift
+- XKey/EventHandling/CharacterInjector.swift
+- XKey/EventHandling/EventTapManager.swift
+- XKey/EventHandling/KeyCodeToCharacter.swift
+- XKey/EventHandling/KeyboardEventHandler.swift
+- XKey/EventHandling/SecureInputStateMachine.swift
+- XKey/InputMethod/IMKitResearch.md
+- XKey/InputMethod/XKeyInputController.swift
+- XKey/UI/ConvertToolViewModel.swift
+- XKey/UI/DebugView.swift
+- XKey/UI/DebugViewModel.swift
+- XKey/UI/DebugWindowController.swift
+- XKey/UI/DonationView.swift
+- XKey/UI/ExcludedAppsView.swift
+- XKey/UI/FloatingOverlay.swift
+- XKey/UI/FloatingToolbarPositioning.swift
+- XKey/UI/FloatingToolbarStyle.swift
+- XKey/UI/HotkeyRecorderView.swift
+- XKey/UI/LogFileReader.swift
+- XKey/UI/MacroManagementViewModel.swift
+- XKey/UI/PreferencesView.swift
+- XKey/UI/PreferencesViewModel.swift
+- XKey/UI/PreferencesWindowController.swift
+- XKey/UI/SecureInputOverlay.swift
+- XKey/UI/SettingsView.swift
+- XKey/UI/SettingsWindowController.swift
+- XKey/UI/StatusBarManager.swift
+- XKey/UI/StatusBarPopoverView.swift
+- XKey/UI/StatusBarViewModel.swift
+- XKey/UI/ToggleHUDWindow.swift
+- XKey/UI/WindowPinManager.swift
+- XKey/UI/WindowTitleRulesView.swift
+- XKey/Utilities/AXErrorExtension.swift
+- XKey/Utilities/AppVersion.swift
+- XKey/Utilities/AudioManager.swift
+- XKey/Utilities/ForceAccessibilityManager.swift
+- XKey/Utilities/IMKitHelper.swift
+- XKey/Utilities/InputSourceSwitcher.swift
+- XKey/Utilities/LaunchAtLogin.swift
+- XKey/Utilities/OverlayAppDetector.swift
+- XKey/Utilities/SharedSettings.swift
+- XKey/Utilities/SyncTombstoneStore.swift
+- XKey/Utilities/iCloudSyncManager.swift
+- XKey/Utilities/iCloudSyncTypes.swift
+- XKey.xcodeproj/project.pbxproj
+- XKeyIM/AppIcon.icns
+- XKeyIM/IMEActivation.swift
+- XKeyIM/IMKitDebugger.swift
+- XKeyIM/IMKitTransport.swift
+- XKeyIM/Info.plist
+- XKeyIM/MenuIcon.pdf
+- XKeyIM/MenuIconVI.pdf
+- XKeyIM/README.md
+- XKeyIM/TapController.swift
+- XKeyIM/XKeyIM.entitlements
+- XKeyIM/XKeyIMController.swift
+- XKeyIM/XKeyIMRelease.entitlements
+- XKeyIM/main.swift
+- XKeyIM/Assets.xcassets/Contents.json
+- XKeyTests/AXDirectFallbackTests.swift
+- XKeyTests/AXPassOffMainThreadTests.swift
+- XKeyTests/AppLanguageTests.swift
+- XKeyTests/AppPolicyRuntimeTests.swift
+- XKeyTests/CGEventTransportTests.swift
+- XKeyTests/CorpusRegressionTests.swift
+- XKeyTests/DebugLoggerTests.swift
+- XKeyTests/DictionaryRuntimeTests.swift
+- XKeyTests/EngineManagerSharingTests.swift
+- XKeyTests/FocusedElementInfoLazyTests.swift
+- XKeyTests/HostCommandRouterTests.swift
+- XKeyTests/IMEActivationTests.swift
+- XKeyTests/IMKitTransportTests.swift
+- XKeyTests/InjectionRoutingTests.swift
+- XKeyTests/InputActionTests.swift
+- XKeyTests/InputArchitectureTests.swift
+- XKeyTests/InputSessionParityContractTests.swift
+- XKeyTests/InputSessionTests.swift
+- XKeyTests/KeyCodeToCharacterTests.swift
+- XKeyTests/KeystrokePerfTests.swift
+- XKey/Assets.xcassets/AppIcon.appiconset/1024.png
+- XKey/Assets.xcassets/AppIcon.appiconset/128.png
+- XKey/Assets.xcassets/AppIcon.appiconset/16.png
+- XKey/Assets.xcassets/AppIcon.appiconset/256.png
+- XKey/Assets.xcassets/AppIcon.appiconset/32.png
+- XKey/Assets.xcassets/AppIcon.appiconset/512.png
+- XKey/Assets.xcassets/AppIcon.appiconset/64.png
+- XKey/Assets.xcassets/AppIcon.appiconset/Contents.json
+- XKey/Assets.xcassets/BugIcon.imageset/Contents.json
+- XKey/Assets.xcassets/BugIcon.imageset/bug-icon.svg
+- XKey/Assets.xcassets/GitHubIcon.imageset/Contents.json
+- XKey/Assets.xcassets/GitHubIcon.imageset/github-mark.svg
+- XKey/Assets.xcassets/XKeyLogo.imageset/Contents.json
+- XKey/Assets.xcassets/XKeyLogo.imageset/xkey-logo.png
+- XKey/Assets.xcassets/XKeyLogo.imageset/xkey-logo@2x.png
+- XKey/Assets.xcassets/XKeyLogo.imageset/xkey-logo@3x.png
+- XKey/Assets.xcassets/qr_bank.imageset/Contents.json
+- XKey/Assets.xcassets/qr_bank.imageset/qr_bank.png
+- XKey/Assets.xcassets/qr_momo.imageset/Contents.json
+- XKey/Assets.xcassets/qr_momo.imageset/qr_momo.png
+- XKey/Core/Engine/ConvertTool.swift
+- XKey/Core/Engine/InputProcessor.swift
+- XKey/Core/Engine/InputSourceManager.swift
+- XKey/Core/Engine/MacroManager.swift
+- XKey/Core/Engine/SmartSwitchManager.swift
+- XKey/Core/Engine/TypingBuffer.swift
+- XKey/Core/Engine/VNDictionaryManager.swift
+- XKey/Core/Engine/VNEngine.swift
+- XKey/Core/Engine/VNEngineAdvanced.swift
+- XKey/Core/Engine/VNEngineEnglishDetection.swift
+- XKey/Core/Engine/VNEngineMacro.swift
+- XKey/Core/Engine/VNEngineSettings.swift
+- XKey/Core/Engine/VNEngineSmartSwitch.swift
+- XKey/Core/Engine/VNEngineSpellCheck.swift
+- XKey/Core/Engine/VNWordBuffer.swift
+- XKey/Core/Engine/VietnameseData.swift
+- XKey/Core/Models/Preferences.swift
+- XKey/Core/Models/VNCharacter.swift
+- XKey/Core/Models/VNCharacterMap.swift
+- XKey/Core/Models/VowelSequenceValidator.swift
+- XKey/Core/Translation/GoogleTranslateProvider.swift
+- XKey/Core/Translation/TencentTransmartProvider.swift
+- XKey/Core/Translation/TranslationLoadingOverlay.swift
+- XKey/Core/Translation/TranslationNetworkManager.swift
+- XKey/Core/Translation/TranslationProvider.swift
+- XKey/Core/Translation/TranslationResultOverlay.swift
+- XKey/Core/Translation/TranslationService.swift
+- XKey/Core/Translation/VolcanoEngineProvider.swift
+- XKey/UI/Components/CustomConsonantChipEditor.swift
+- XKey/UI/SettingsSections/AboutSection.swift
+- XKey/UI/SettingsSections/AdvancedSection.swift
+- XKey/UI/SettingsSections/AppearanceSection.swift
+- XKey/UI/SettingsSections/BackupRestoreSection.swift
+- XKey/UI/SettingsSections/ConvertToolSection.swift
+- XKey/UI/SettingsSections/ExcludedAppsSection.swift
+- XKey/UI/SettingsSections/GeneralSection.swift
+- XKey/UI/SettingsSections/InputSourcesSection.swift
+- XKey/UI/SettingsSections/MacroSection.swift
+- XKey/UI/SettingsSections/QuickTypingSection.swift
+- XKey/UI/SettingsSections/SharedComponents.swift
+- XKey/UI/SettingsSections/TranslationSection.swift
+- XKey/UI/TempOffToolbar/TempOffToolbarController.swift
+- XKey/UI/TempOffToolbar/TempOffToolbarView.swift
+- XKey/UI/TempOffToolbar/TempOffToolbarViewModel.swift
+- XKey/UI/TranslationToolbar/TranslationToolbarController.swift
+- XKey/UI/TranslationToolbar/TranslationToolbarView.swift
+- XKey/UI/TranslationToolbar/TranslationToolbarViewModel.swift
+- XKey.xcodeproj/xcshareddata/xcschemes/XKey.xcscheme
+- XKey.xcodeproj/xcshareddata/xcschemes/XKeyIM.xcscheme
+- XKey.xcodeproj/xcshareddata/xcschemes/XKeyTests.xcscheme
+- XKeyIM/Assets.xcassets/AccentColor.colorset/Contents.json
+- XKeyIM/Assets.xcassets/AppIcon.appiconset/1024.png
+- XKeyIM/Assets.xcassets/AppIcon.appiconset/128.png
+- XKeyIM/Assets.xcassets/AppIcon.appiconset/16.png
+- XKeyIM/Assets.xcassets/AppIcon.appiconset/256.png
+- XKeyIM/Assets.xcassets/AppIcon.appiconset/32.png
+- XKeyIM/Assets.xcassets/AppIcon.appiconset/512.png
+- XKeyIM/Assets.xcassets/AppIcon.appiconset/64.png
+- XKeyIM/Assets.xcassets/AppIcon.appiconset/Contents.json
+- XKeyTests/MacroManagerTests.swift
+- XKeyTests/RuntimePreferencesTests.swift
+- XKeyTests/ScreenSimulationTests.swift
+- XKeyTests/SecureInputMonitorTests.swift
+- XKeyTests/SecureInputStateMachineTests.swift
+- XKeyTests/ServicesProviderTests.swift
+- XKeyTests/SessionMonitoringTests.swift
+- XKeyTests/SettingsReloadDebouncerTests.swift
+- XKeyTests/TapEnvironmentTests.swift
+- XKeyTests/TapOwnershipTests.swift
+- XKeyTests/ToggleRulesTests.swift
+- XKeyTests/TranslationProviderTests.swift
+- XKeyTests/TwoDeviceSyncTests.swift
+- XKeyTests/TypingBufferTests.swift
+- XKeyTests/VNDictionaryManagerTests.swift
+- XKeyTests/VNEngineAdaptiveTests.swift
+- XKeyTests/VNEngineAutoCapitalizeTests.swift
+- XKeyTests/VNEngineBackspaceRestoreTests.swift
+- XKeyTests/VNEngineBufferIntegrationTests.swift
+- XKeyTests/VNEngineTests.swift
+- XKeyTests/WindowTitleResolutionTests.swift
+- XKeyTests/iCloudSyncManagerTests.swift
+- XKeyTests/Resources/telex_test_suite.csv
+- docs/project-context.md
+- docs/sharded/index.md
+- docs/superpowers/plans/2026-08-28-xkeyim-event-tap.md
+- docs/superpowers/plans/2026-08-29-tap-host-contract.md
+- docs/superpowers/specs/2026-08-28-xkeyim-event-tap-design.md
+- docs/superpowers/specs/2026-08-29-tap-host-contract-design.md
+- plans/project-analysis-input.json
+- plans/project-analysis-input.yaml
+- plans/project-scan-report.json
+- plans/project-scan-report.yaml
+- plans/work-items.yaml
+- plans/workflow-init-report.json
+- plans/workflow-init-report.yaml
+- plans/workflow-status.yaml
+- plans/261012-1409-workflow-init/brainstorm/brainstorm-v01.md
+- plans/261012-1409-workflow-init/brainstorm/decision-handoff.json
+- plans/261012-1409-workflow-init/brainstorm/latest.json
+- plans/261012-1409-workflow-init/context/project-context-snapshot.md
+- plans/261012-1409-workflow-init/discovery/project-analysis-input.json
+- plans/261012-1409-workflow-init/discovery/project-analysis-input.yaml
+- plans/261012-1409-workflow-init/discovery/project-scan-report.json
+- plans/261012-1409-workflow-init/discovery/project-scan-report.yaml
+- plans/261012-1409-workflow-init/status/events.ndjson
+- plans/261012-1409-workflow-init/status/item-status.json
+summary:
+  files_scanned: 246
+  directories_scanned: 41
+  extensions:
+    .md: 15
+    <no-ext>: 1
+    .xcconfig: 1
+    .sh: 1
+    .png: 21
+    .swift: 164
+    .plist: 2
+    .xcstrings: 1
+    .entitlements: 4
+    .json: 18
+    .pbxproj: 1
+    .icns: 1
+    .pdf: 2
+    .svg: 2
+    .xcscheme: 3
+    .csv: 1
+    .yaml: 7
+    .ndjson: 1
+  key_files:
+  - AGENTS.md
+  - CLAUDE.md
+  - README.md
+  - XKeyIM/README.md
+  dominant_languages: []
+  detected_stacks: []
+  top_level_dirs:
+  - Shared
+  - Tools
+  - XKey
+  - XKey.xcodeproj
+  - XKeyIM
+  - XKeyTests
+  - docs
+  - plans
+  project_purpose_guess: '**Bộ gõ tiếng Việt hiện đại cho macOS**'
+  purpose_confidence: 0.88
+  architecture_guess: Architecture appears mixed or monolithic; deeper scan may be
+    required for precise boundaries.
+  startup_hints: []
+  repository_index:
+  - path: XKey/UI
+    files: 43
+    example: XKey/UI/ConvertToolViewModel.swift
+    role_guess: frontend-or-client-surface
+    confidence: 0.74
+  - path: XKey/Core
+    files: 28
+    example: XKey/Core/Engine/ConvertTool.swift
+    role_guess: unknown
+    confidence: 0.55
+  - path: XKey/Assets.xcassets
+    files: 21
+    example: XKey/Assets.xcassets/Contents.json
+    role_guess: unknown
+    confidence: 0.55
+  - path: Shared/InputSession
+    files: 12
+    example: Shared/InputSession/AppPolicyRuntime.swift
+    role_guess: unknown
+    confidence: 0.55
+  - path: XKey/Utilities
+    files: 12
+    example: XKey/Utilities/AXErrorExtension.swift
+    role_guess: unknown
+    confidence: 0.55
+  - path: XKeyIM/Assets.xcassets
+    files: 10
+    example: XKeyIM/Assets.xcassets/Contents.json
+    role_guess: unknown
+    confidence: 0.55
+  - path: plans/261012-1409-workflow-init
+    files: 10
+    example: plans/261012-1409-workflow-init/brainstorm/brainstorm-v01.md
+    role_guess: unknown
+    confidence: 0.55
+  - path: XKey/EventHandling
+    files: 7
+    example: XKey/EventHandling/AdvancedInjectionMethods.swift
+    role_guess: unknown
+    confidence: 0.55
+  - path: XKey/App
+    files: 6
+    example: XKey/App/AppDelegate.swift
+    role_guess: frontend-or-client-surface
+    confidence: 0.74
+  - path: docs/superpowers
+    files: 4
+    example: docs/superpowers/plans/2026-08-28-xkeyim-event-tap.md
+    role_guess: unknown
+    confidence: 0.55
+  - path: XKey.xcodeproj/xcshareddata
+    files: 3
+    example: XKey.xcodeproj/xcshareddata/xcschemes/XKey.xcscheme
+    role_guess: unknown
+    confidence: 0.55
+  - path: XKey/InputMethod
+    files: 2
+    example: XKey/InputMethod/IMKitResearch.md
+    role_guess: unknown
+    confidence: 0.55
+  - path: AGENTS.md
+    files: 1
+    example: AGENTS.md
+    role_guess: unknown
+    confidence: 0.55
+  - path: CLAUDE.md
+    files: 1
+    example: CLAUDE.md
+    role_guess: unknown
+    confidence: 0.55
+  - path: LICENSE
+    files: 1
+    example: LICENSE
+    role_guess: unknown
+    confidence: 0.55
+  - path: QWERTZ_SUPPORT.md
+    files: 1
+    example: QWERTZ_SUPPORT.md
+    role_guess: unknown
+    confidence: 0.55
+  - path: README.en.md
+    files: 1
+    example: README.en.md
+    role_guess: unknown
+    confidence: 0.55
+  - path: README.md
+    files: 1
+    example: README.md
+    role_guess: unknown
+    confidence: 0.55
+  - path: Version.xcconfig
+    files: 1
+    example: Version.xcconfig
+    role_guess: unknown
+    confidence: 0.55
+  - path: build_release.sh
+    files: 1
+    example: build_release.sh
+    role_guess: frontend-or-client-surface
+    confidence: 0.74
+  - path: xkey-panel.png
+    files: 1
+    example: xkey-panel.png
+    role_guess: unknown
+    confidence: 0.55
+  - path: xkey.png
+    files: 1
+    example: xkey.png
+    role_guess: unknown
+    confidence: 0.55
+  - path: Shared/AXHelper.swift
+    files: 1
+    example: Shared/AXHelper.swift
+    role_guess: unknown
+    confidence: 0.55
+  - path: Shared/AppBehaviorDetector.swift
+    files: 1
+    example: Shared/AppBehaviorDetector.swift
+    role_guess: frontend-or-client-surface
+    confidence: 0.74
+  - path: Shared/DebugLogger.swift
+    files: 1
+    example: Shared/DebugLogger.swift
+    role_guess: unknown
+    confidence: 0.55
+  - path: Shared/TapEnvironment.swift
+    files: 1
+    example: Shared/TapEnvironment.swift
+    role_guess: unknown
+    confidence: 0.55
+  - path: Shared/TapEventSource.swift
+    files: 1
+    example: Shared/TapEventSource.swift
+    role_guess: unknown
+    confidence: 0.55
+  - path: Shared/TranslationLanguage.swift
+    files: 1
+    example: Shared/TranslationLanguage.swift
+    role_guess: unknown
+    confidence: 0.55
+  - path: Tools/generate_menu_icons.swift
+    files: 1
+    example: Tools/generate_menu_icons.swift
+    role_guess: unknown
+    confidence: 0.55
+  - path: XKey/Info.plist
+    files: 1
+    example: XKey/Info.plist
+    role_guess: unknown
+    confidence: 0.55
+  notes:
+  - 'Scan mode: deep'
+  - 'Applied depth limit: 7'
+  - 'Applied file limit per run: 600'
+  - 'New files scanned this run: 126'
+resume_cursor:
+  last_path: plans/261012-1409-workflow-init/status/item-status.json
+  completed: true
+issues:
+- severity: medium
+  message: No obvious automated test footprint found.
+  path: null
+recommended_next_actions:
+- Update docs/project-context.md using this scan output before /plan
+- Create a targeted plan with /plan referencing this scan
+brainstorm_questions:
+- Who is the primary user persona, and what pain point must be solved first?
+- Which user journey is highest priority for this sprint (from entry to successful
+  outcome)?
+- What is the confirmed local startup path (dependencies, env setup, run command)
+  that we should standardize?
+- 'Which modules own business-critical logic among: XKey/UI, XKey/Core, XKey/Assets.xcassets?'
+- 'Can you clarify: Source code contents: no Swift file bodies were visible, only
+  the file list, so module responsibilities are inferred from names and the README.?'
+- 'Can you clarify: Whether XKeyTests has real tests, what they cover, and whether
+  the XKey scheme runs them.?'
+- 'Can you clarify: Whether CI (GitHub Actions) exists, and how releases, notarization
+  and the auto-update feed are produced.?'
+- 'How should we mitigate this first critical risk: Fragile CGEvent injection and
+  Accessibility behavior across macOS versions and apps -> Keep a per-app compatibility
+  matrix with regression tests for the policy layer. Prefer the IMKit path where feasible....?'
+brainstorm_recommendation:
+  recommended_depth: basic
+  recommended_session_pattern: single-loop (problem/scope/constraints + acceptance
+    criteria)
+  score: 4
+  confidence: 0.78
+  factors:
+  - '[+2] missing_information=9'
+  - '[+1] repository_index_entries=30'
+  - '[+1] architecture boundaries are still mixed/uncertain'
+  required_clarifications:
+  - 'Clarify unknown: Source code contents: no Swift file bodies were visible, only
+    the file list, so module responsibilities are inferred from names and the README.'
+  - 'Clarify unknown: Whether XKeyTests has real tests, what they cover, and whether
+    the XKey scheme runs them.'
+  - 'Clarify unknown: Whether CI (GitHub Actions) exists, and how releases, notarization
+    and the auto-update feed are produced.'
+  - Confirm module boundaries and ownership map for the first delivery slice.
+  - Confirm canonical local startup command with prerequisites.
+  requires_user_confirmation: true
+  decision_status: pending_user_confirmation
+  policy: advisory-only
+  generated_at: '2026-10-12T07:10:33+00:00'
+analysis_mode: hybrid
+execution_profile: custom
+analysis_input_json: plans/project-analysis-input.json
+work_item:
+  id: 261012-1409-workflow-init
+  path: plans/261012-1409-workflow-init
+  handoff_status: draft
+analysis:
+  provider: claude
+  run_id: 5baf0b62-3b80-4abb-841c-b49c6d9ffcee
+  purpose_summary: 'XKey is a native macOS Vietnamese typing method (Telex, VNI, Simple
+    Telex, auto-detect) that replaces unmaintained or incompatible Vietnamese IMEs
+    on recent macOS (12+). It converts keystrokes into Vietnamese characters in any
+    app. It adds productivity features: macros, quick typing, spell-check with personal
+    dictionary, per-app smart switch, text conversion tools (case, code table, strip
+    diacritics), and hotkey translation. It runs locally and collects no user data.
+    This repo looks like a fork or personal checkout (git user LuffyTran) of the upstream
+    xmannv/xkey project.'
+  purpose_confidence: 0.93
+  architecture_overview: 'Xcode project (XKey.xcodeproj, Swift, SwiftUI plus AppKit)
+    with two runtime surfaces. (1) XKey: a menu-bar app that installs a CGEvent tap
+    and injects replacement keystrokes or text into the focused app. It uses the Accessibility
+    API and has special handling for app quirks (Spotlight, Raycast, terminals, browsers).
+    (2) XKeyIM: an experimental Input Method Kit (IMKInputController) bundle installed
+    in ~/Library/Input Methods, with a different bundle id (com.codetay.inputmethod.XKey).
+    It gives flicker-free composition and shares the engine code. A third layer, Shared/,
+    is compiled into both targets. It holds the input session and app-policy runtime
+    (Shared/InputSession), AX helpers, app behavior detection, tap environment/event
+    source, debug logging and translation languages. XKey/Core/Engine holds the Vietnamese
+    engine (VNEngine, spell checker, ConvertTool, code tables). XKey/EventHandling
+    holds the injection strategies. XKey/UI holds the SwiftUI settings, convert-tool
+    and debug windows. XKey/Utilities and XKey/App (AppDelegate) cover lifecycle and
+    helpers. Integrations: macOS Accessibility, Input Monitoring, Services menu, global
+    hotkeys, App Group shared settings, online translation providers (Google, Tencent,
+    Volcano), auto-update and Homebrew cask distribution, and a bundled GPL Vietnamese
+    dictionary. Versioning lives in Version.xcconfig. build_release.sh packages releases.
+    XKeyTests holds unit tests. The docs, plans and superpowers folders hold workflow
+    and design notes, not runtime code.'
+  repository_index:
+  - path: XKey/App
+    role: 'App entry and AppDelegate: menu-bar lifecycle, permissions, wiring of event
+      tap and UI'
+    confidence: 0.8
+  - path: XKey/Core
+    role: 'Engine and models: Vietnamese conversion engine, spell checker, ConvertTool,
+      code tables, input method models (28 files)'
+    confidence: 0.85
+  - path: XKey/EventHandling
+    role: CGEvent tap handling and text injection strategies (AdvancedInjectionMethods
+      etc.)
+    confidence: 0.8
+  - path: XKey/UI
+    role: SwiftUI settings, convert tool, macro, dictionary and debug windows (43
+      files)
+    confidence: 0.85
+  - path: XKey/Utilities
+    role: Helpers such as AX error extensions
+    confidence: 0.65
+  - path: XKey/InputMethod
+    role: IMKit research notes for the IM mode
+    confidence: 0.6
+  - path: XKeyIM
+    role: 'Input Method Kit target: main.swift, XKeyIMController, Info.plist, entitlements,
+      localizations, README'
+    confidence: 0.9
+  - path: Shared
+    role: 'Code shared by XKey and XKeyIM: input session/app policy runtime, AX helper,
+      app behavior detector, tap environment, debug logger'
+    confidence: 0.85
+  - path: XKeyTests
+    role: Unit test target (the heuristic 'no tests' finding is likely wrong)
+    confidence: 0.7
+  - path: XKey.xcodeproj
+    role: Project, targets and shared schemes (XKey, XKeyIM)
+    confidence: 0.9
+  - path: Version.xcconfig
+    role: MARKETING_VERSION and build versions used by release badge and builds
+    confidence: 0.85
+  - path: build_release.sh
+    role: Release build and packaging script
+    confidence: 0.8
+  - path: Tools/generate_menu_icons.swift
+    role: Script to generate menu icon assets
+    confidence: 0.7
+  - path: docs
+    role: Project docs, project-context, sharded docs, superpowers plans (e.g. XKeyIM
+      event tap)
+    confidence: 0.75
+  - path: plans
+    role: Workflow-tool plans and brainstorm outputs (not product code)
+    confidence: 0.8
+  - path: README.md
+    role: Primary Vietnamese README with features; README.en.md is the English version
+    confidence: 0.9
+  - path: QWERTZ_SUPPORT.md
+    role: Notes on QWERTZ layout support
+    confidence: 0.6
+  - path: CLAUDE.md
+    role: AI-agent workflow guardrails (also AGENTS.md); not product code
+    confidence: 0.9
+  key_modules:
+  - name: Vietnamese engine
+    path: XKey/Core/Engine
+    responsibility: Typing-method state machine for Telex/VNI/Simple Telex, tone and
+      diacritic placement, code-table output (Unicode, TCVN3, VNI), spell checking,
+      ConvertTool text transforms
+    confidence: 0.8
+  - name: Event handling / injection
+    path: XKey/EventHandling
+    responsibility: CGEvent tap interception, backspace and text injection with per-app
+      timing; AdvancedInjectionMethods
+    confidence: 0.75
+  - name: Input session and app policy
+    path: Shared/InputSession
+    responsibility: Per-session buffer state and per-app policy runtime shared by
+      both modes (e.g. AppPolicyRuntime)
+    confidence: 0.6
+  - name: App behavior detection
+    path: Shared/AppBehaviorDetector.swift
+    responsibility: Detects focused app and overlays (Spotlight, Raycast, browsers,
+      terminals) to choose workarounds and smart switch
+    confidence: 0.7
+  - name: Accessibility helper
+    path: Shared/AXHelper.swift
+    responsibility: Reads focus, selection and text via the AX API for translation,
+      injection and app detection
+    confidence: 0.7
+  - name: XKeyIM controller
+    path: XKeyIM/XKeyIMController.swift
+    responsibility: IMKInputController subclass that routes keys into the shared engine
+      with marked-text composition
+    confidence: 0.8
+  - name: SwiftUI UI layer
+    path: XKey/UI
+    responsibility: Settings panels, macro and dictionary editors, convert tool view
+      model, debug window
+    confidence: 0.8
+  - name: AppDelegate
+    path: XKey/App/AppDelegate.swift
+    responsibility: Menu-bar app lifecycle, permissions, hotkeys, Services menu, startup
+      of the event tap
+    confidence: 0.75
+  - name: Translation
+    path: Shared/TranslationLanguage.swift
+    responsibility: Language list for hotkey translation via Google, Tencent and Volcano
+      providers
+    confidence: 0.6
+  - name: Release tooling
+    path: build_release.sh
+    responsibility: Builds and packages XKey and XKeyIM; reads Version.xcconfig
+    confidence: 0.65
+  startup_instructions:
+  - scenario: Open and develop in Xcode
+    command: open XKey.xcodeproj
+    notes: Pick the XKey scheme and run. macOS 12+ is the stated minimum. The XKey
+      scheme is in XKey.xcodeproj/xcshareddata/xcschemes. Signing team and App Group
+      may need local adjustment.
+    confidence: 0.8
+  - scenario: CLI build (debug)
+    command: xcodebuild -project XKey.xcodeproj -scheme XKey -configuration Debug
+      build
+    notes: Not run here; verify the scheme names with `xcodebuild -list`.
+    confidence: 0.7
+  - scenario: Run unit tests
+    command: xcodebuild -project XKey.xcodeproj -scheme XKey -destination 'platform=macOS'
+      test
+    notes: XKeyTests exists, but whether it is attached to the XKey scheme is unverified.
+    confidence: 0.55
+  - scenario: Build the XKeyIM input method
+    command: xcodebuild -project XKey.xcodeproj -scheme XKeyIM -configuration Release
+      build
+    notes: Then copy XKeyIM.app to ~/Library/Input Methods/, log out and in, and add
+      'XKey Vietnamese' in System Settings > Keyboard > Input Sources. The XKeyIM
+      README documents this.
+    confidence: 0.8
+  - scenario: Release build
+    command: ./build_release.sh
+    notes: Needs signing identity and possibly notarization credentials; read the
+      script before running. The XKeyIM README says to run it from the repo root;
+      its 'cd XKey' hint looks stale.
+    confidence: 0.6
+  - scenario: First run permissions
+    command: (manual) grant Accessibility and Input Monitoring to XKey in System Settings
+      > Privacy & Security
+    notes: Required for the CGEvent tap and injection to work.
+    confidence: 0.8
+  - scenario: Install a released build
+    command: brew install --cask xkey
+    notes: From the README Homebrew badge; this installs the upstream release, not
+      local code.
+    confidence: 0.7
+  critical_risks:
+  - severity: high
+    issue: Fragile CGEvent injection and Accessibility behavior across macOS versions
+      and apps
+    evidence: Recent commits are mostly per-app and focus fixes (secure input reminders,
+      hotkey handling, Telegram Web rule). README says IM mode is better in Terminal/Spotlight.
+      AdvancedInjectionMethods and AppBehaviorDetector exist for workarounds.
+    recommendation: Keep a per-app compatibility matrix with regression tests for
+      the policy layer. Prefer the IMKit path where feasible. Test on each new macOS
+      release.
+    confidence: 0.7
+  - severity: high
+    issue: Privacy and security exposure of a keystroke-level tool
+    evidence: Needs Accessibility and Input Monitoring permissions, reads text via
+      the AX API, handles secure input, and sends text to online translation providers
+      (Google, Tencent, Volcano) despite the 'fully local, no data collection' claim.
+    recommendation: Document that translation sends text off-device. Exclude secure
+      fields and password managers. Audit logging so DebugLogger never persists typed
+      content. Keep the secret scan and dependency audit in CI.
+    confidence: 0.7
+  - severity: medium
+    issue: Test coverage is uncertain and likely thin for the event and UI layers
+    evidence: The heuristic found no obvious tests, but an XKeyTests directory exists.
+      No CI config appears in the scanned index. Engine correctness is covered only
+      if the tests actually target it.
+    recommendation: Confirm XKeyTests is wired into the scheme. Add engine golden
+      tests (Telex/VNI tables, spell restore) and policy tests. Add CI running xcodebuild
+      test.
+    confidence: 0.55
+  - severity: medium
+    issue: Two input paths share code, so changes can regress one path silently
+    evidence: Shared/ is compiled into XKey and XKeyIM. The XKeyIM README requires
+      manually setting target membership on engine files. docs/superpowers has an
+      XKeyIM event-tap plan.
+    recommendation: Move the shared engine into a Swift package or framework with
+      its own tests. Verify both targets build in CI.
+    confidence: 0.6
+  - severity: medium
+    issue: Bundle id and App Group inconsistencies in docs
+    evidence: XKeyIM README lists the group as group.com.codetay.xkey in one place
+      and group.com.codetay.inputmethod.XKey in setup steps. It also says to run `cd
+      XKey` before build_release.sh, which looks stale.
+    recommendation: Verify the entitlements and Info.plist values, then correct the
+      docs. A mismatch breaks settings sharing between the app and the IM.
+    confidence: 0.6
+  - severity: medium
+    issue: Release and signing process depends on private credentials and manual steps
+    evidence: The README documents Developer ID provisioning for XKeyIM. build_release.sh
+      exists, and the app has auto-update and a Homebrew cask.
+    recommendation: Script notarization and update-feed publishing. Keep credentials
+      in the keychain or environment variables, never in the repo.
+    confidence: 0.5
+  - severity: low
+    issue: 'Licensing mix: MIT project with a GPL Vietnamese dictionary'
+    evidence: The README badge says MIT. The spell-check feature notes a ~200KB dictionary
+      under a GPL license.
+    recommendation: Check that the dictionary's license is compatible with distribution
+      or is kept as a separate data file. Document attribution.
+    confidence: 0.55
+  - severity: low
+    issue: Working tree has uncommitted workflow artifacts
+    evidence: git status shows a modified .gitignore plus untracked docs/project-context.md,
+      docs/sharded/ and plans/.
+    recommendation: Decide whether the AI workflow artifacts belong in the repo. Ignore
+      them or commit them deliberately.
+    confidence: 0.6
+  missing_information:
+  - 'Source code contents: no Swift file bodies were visible, only the file list,
+    so module responsibilities are inferred from names and the README.'
+  - Whether XKeyTests has real tests, what they cover, and whether the XKey scheme
+    runs them.
+  - Whether CI (GitHub Actions) exists, and how releases, notarization and the auto-update
+    feed are produced.
+  - The auto-update mechanism (Sparkle or custom) and its signing keys.
+  - 'Exact build settings: deployment target, Swift version, signing team, entitlements,
+    and which files belong to which target.'
+  - How the main app and XKeyIM coordinate (App Group, XPC or distributed notifications)
+    and which one is authoritative in IM mode.
+  - How this repo relates to upstream xmannv/xkey (fork or mirror) and what has diverged.
+  - docs/project-architecture.md and docs/project-spec.md, referenced by CLAUDE.md,
+    were not in the scanned index.
+  - Whether the repo follows a data-privacy policy for the translation requests (endpoints,
+    what is logged).
+  overall_confidence: 0.74
+  quality_gate_pass: false
+  generated_at: '2026-10-12T07:10:33+00:00'
+analysis_output_json: plans/project-analysis-output.json

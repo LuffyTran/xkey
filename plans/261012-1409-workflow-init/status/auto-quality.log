@@ -1,0 +1,190 @@
+# Auto Quality Log
+generated_at: 2026-10-12T07:13:01.309Z
+exit_code: 0
+
+## stdout
+{
+  "version": "1.0",
+  "generated_at": "2026-10-12T07:13:01+00:00",
+  "project_root": "/Volumes/Projects/github-lufftran/xkey",
+  "requested_project_root": "/Volumes/Projects/github-lufftran/xkey",
+  "mode": "full",
+  "scope": "auto",
+  "strict": true,
+  "lifecycle_origin": "auto-fix",
+  "lifecycle_command": "/test",
+  "ui_engine": "auto",
+  "ui_coverage": "impacted",
+  "changed_files_count": 29,
+  "changed_files": [
+    ".gitignore",
+    "docs/project-context.md",
+    "docs/repo-map.md",
+    "docs/sharded/index.md",
+    "plans/261012-1409-workflow-init/brainstorm/brainstorm-v01.md",
+    "plans/261012-1409-workflow-init/brainstorm/decision-handoff.json",
+    "plans/261012-1409-workflow-init/brainstorm/latest.json",
+    "plans/261012-1409-workflow-init/context/project-context-snapshot.md",
+    "plans/261012-1409-workflow-init/discovery/project-analysis-input.json",
+    "plans/261012-1409-workflow-init/discovery/project-analysis-input.yaml",
+    "plans/261012-1409-workflow-init/discovery/project-analysis-output.json",
+    "plans/261012-1409-workflow-init/discovery/project-analysis-output.yaml",
+    "plans/261012-1409-workflow-init/discovery/project-scan-report.json",
+    "plans/261012-1409-workflow-init/discovery/project-scan-report.yaml",
+    "plans/261012-1409-workflow-init/reports/bootstrap-report.json",
+    "plans/261012-1409-workflow-init/status/auto-quality.lock",
+    "plans/261012-1409-workflow-init/status/events.ndjson",
+    "plans/261012-1409-workflow-init/status/item-status.json",
+    "plans/project-analysis-input.json",
+    "plans/project-analysis-input.yaml",
+    "plans/project-analysis-output.json",
+    "plans/project-analysis-output.yaml",
+    "plans/project-scan-report.json",
+    "plans/project-scan-report.yaml",
+    "plans/reports/branches/main/commit-latest.md",
+    "plans/work-items.yaml",
+    "plans/workflow-init-report.json",
+    "plans/workflow-init-report.yaml",
+    "plans/workflow-status.yaml"
+  ],
+  "checks": {
+    "hardcoded": {
+      "name": "hardcoded",
+      "applicable": true,
+      "passed": true,
+      "detail": "No hard-coded secret/config findings",
+      "command": "",
+      "execution": {}
+    },
+    "skill_markdown_links": {
+      "name": "skill_markdown_links",
+      "applicable": false,
+      "passed": true,
+      "detail": "No broken local links in SKILL.md files",
+      "command": "",
+      "execution": {}
+    },
+    "skill_artifacts": {
+      "name": "skill_artifacts",
+      "applicable": false,
+      "passed": true,
+      "detail": "No tracked skill artifacts detected",
+      "command": "",
+      "execution": {}
+    },
+    "skill_script_smoke": {
+      "name": "skill_script_smoke",
+      "applicable": false,
+      "passed": true,
+      "detail": "Smoke script not configured",
+      "command": "",
+      "execution": {}
+    },
+    "lint": {
+      "name": "lint",
+      "applicable": false,
+      "passed": true,
+      "detail": "No lint script detected in package.json",
+      "command": "",
+      "execution": {}
+    },
+    "typecheck": {
+      "name": "typecheck",
+      "applicable": false,
+      "passed": true,
+      "detail": "No typecheck script detected in package.json",
+      "command": "",
+      "execution": {}
+    },
+    "build": {
+      "name": "build",
+      "applicable": false,
+      "passed": true,
+      "detail": "No build script detected in package.json",
+      "command": "",
+      "execution": {}
+    },
+    "tests": {
+      "name": "tests",
+      "applicable": false,
+      "passed": true,
+      "detail": "No test script detected in package.json",
+      "command": "",
+      "execution": {}
+    },
+    "ui_smoke": {
+      "name": "ui_smoke",
+      "applicable": true,
+      "passed": false,
+      "detail": "XCUITest detected \u2014 run E2E manually on device/simulator and pass --ui-engine none to skip gate",
+      "command": "",
+      "execution": {}
+    },
+    "dependency_audit": {
+      "name": "dependency_audit",
+      "applicable": false,
+      "passed": true,
+      "detail": "Dependency audit not applicable",
+      "command": "",
+      "execution": {}
+    }
+  },
+  "hardcoded_findings": [],
+  "skill_markdown_issues": [],
+  "skill_artifact_matches": [],
+  "warnings": [
+    "Non-blocking required step pending: maestro runtime UI validation has not completed.",
+    "Strict mode: lint check is unavailable (not applicable for this project type).",
+    "Strict mode: typecheck check is unavailable (not applicable for this project type).",
+    "Strict mode: build check is unavailable (not applicable for this project type).",
+    "Strict mode: tests check is unavailable (not applicable for this project type)."
+  ],
+  "recommended_actions": [
+    "Run XCUITest manually or add a CI script, then re-run /quality.",
+    "Run required non-blocking step: /test mobile-flow (run Maestro and attach evidence)."
+  ],
+  "summary": {
+    "quality_gate_passed": true,
+    "security_passed": true,
+    "failing_checks": [],
+    "soft_failed_checks": [
+      "ui_smoke"
+    ],
+    "frontend_impacted": false
+  },
+  "required_runtime_steps": {
+    "ui_validation": {
+      "required": true,
+      "tool": "maestro",
+      "status": "pending",
+      "blocking": false,
+      "reason": "App scope detected; mobile flow validation is required as a non-blocking step.",
+      "recommended_command": "/test mobile-flow (run Maestro and attach evidence)",
+      "check_name": "ui_smoke",
+      "check_detail": "XCUITest detected \u2014 run E2E manually on device/simulator and pass --ui-engine none to skip gate"
+    }
+  },
+  "e2e_tool_detected": "xcuitest",
+  "project_type": {
+    "web": false,
+    "react_native": false,
+    "flutter": false,
+    "ios_native": true,
+    "android_native": false,
+    "backend_only": false
+  },
+  "spec_coverage": {
+    "available": false
+  },
+  "routing_enforced": true,
+  "active_work_item_id": "261012-1409-workflow-init",
+  "active_work_item_path": "plans/261012-1409-workflow-init",
+  "artifacts": {
+    "json": "plans/261012-1409-workflow-init/reports/quality-gate-report.json",
+    "yaml": "plans/261012-1409-workflow-init/reports/quality-gate-report.yaml",
+    "markdown": null
+  }
+}
+
+
+## stderr

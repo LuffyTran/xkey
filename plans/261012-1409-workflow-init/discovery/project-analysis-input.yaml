@@ -1,0 +1,473 @@
+generated_at: '2026-10-12T07:09:49+00:00'
+root_path: /Volumes/Projects/github-lufftran/xkey
+scan_mode: deep
+heuristic_summary:
+  project_purpose_guess: '**Bộ gõ tiếng Việt hiện đại cho macOS**'
+  purpose_confidence: 0.88
+  architecture_guess: Architecture appears mixed or monolithic; deeper scan may be
+    required for precise boundaries.
+  detected_stacks: []
+  dominant_languages: []
+  serious_findings:
+  - severity: medium
+    message: No obvious automated test footprint found.
+    path: null
+scan_stats:
+  files_scanned: 246
+  new_files_scanned: 126
+  directories_scanned: 41
+  top_level_dirs:
+  - Shared
+  - Tools
+  - XKey
+  - XKey.xcodeproj
+  - XKeyIM
+  - XKeyTests
+  - docs
+  - plans
+repository_index:
+- path: XKey/UI
+  files: 43
+  example: XKey/UI/ConvertToolViewModel.swift
+  role_guess: frontend-or-client-surface
+  confidence: 0.74
+- path: XKey/Core
+  files: 28
+  example: XKey/Core/Engine/ConvertTool.swift
+  role_guess: unknown
+  confidence: 0.55
+- path: XKey/Assets.xcassets
+  files: 21
+  example: XKey/Assets.xcassets/Contents.json
+  role_guess: unknown
+  confidence: 0.55
+- path: Shared/InputSession
+  files: 12
+  example: Shared/InputSession/AppPolicyRuntime.swift
+  role_guess: unknown
+  confidence: 0.55
+- path: XKey/Utilities
+  files: 12
+  example: XKey/Utilities/AXErrorExtension.swift
+  role_guess: unknown
+  confidence: 0.55
+- path: XKeyIM/Assets.xcassets
+  files: 10
+  example: XKeyIM/Assets.xcassets/Contents.json
+  role_guess: unknown
+  confidence: 0.55
+- path: plans/261012-1409-workflow-init
+  files: 10
+  example: plans/261012-1409-workflow-init/brainstorm/brainstorm-v01.md
+  role_guess: unknown
+  confidence: 0.55
+- path: XKey/EventHandling
+  files: 7
+  example: XKey/EventHandling/AdvancedInjectionMethods.swift
+  role_guess: unknown
+  confidence: 0.55
+- path: XKey/App
+  files: 6
+  example: XKey/App/AppDelegate.swift
+  role_guess: frontend-or-client-surface
+  confidence: 0.74
+- path: docs/superpowers
+  files: 4
+  example: docs/superpowers/plans/2026-08-28-xkeyim-event-tap.md
+  role_guess: unknown
+  confidence: 0.55
+- path: XKey.xcodeproj/xcshareddata
+  files: 3
+  example: XKey.xcodeproj/xcshareddata/xcschemes/XKey.xcscheme
+  role_guess: unknown
+  confidence: 0.55
+- path: XKey/InputMethod
+  files: 2
+  example: XKey/InputMethod/IMKitResearch.md
+  role_guess: unknown
+  confidence: 0.55
+- path: AGENTS.md
+  files: 1
+  example: AGENTS.md
+  role_guess: unknown
+  confidence: 0.55
+- path: CLAUDE.md
+  files: 1
+  example: CLAUDE.md
+  role_guess: unknown
+  confidence: 0.55
+- path: LICENSE
+  files: 1
+  example: LICENSE
+  role_guess: unknown
+  confidence: 0.55
+- path: QWERTZ_SUPPORT.md
+  files: 1
+  example: QWERTZ_SUPPORT.md
+  role_guess: unknown
+  confidence: 0.55
+- path: README.en.md
+  files: 1
+  example: README.en.md
+  role_guess: unknown
+  confidence: 0.55
+- path: README.md
+  files: 1
+  example: README.md
+  role_guess: unknown
+  confidence: 0.55
+- path: Version.xcconfig
+  files: 1
+  example: Version.xcconfig
+  role_guess: unknown
+  confidence: 0.55
+- path: build_release.sh
+  files: 1
+  example: build_release.sh
+  role_guess: frontend-or-client-surface
+  confidence: 0.74
+- path: xkey-panel.png
+  files: 1
+  example: xkey-panel.png
+  role_guess: unknown
+  confidence: 0.55
+- path: xkey.png
+  files: 1
+  example: xkey.png
+  role_guess: unknown
+  confidence: 0.55
+- path: Shared/AXHelper.swift
+  files: 1
+  example: Shared/AXHelper.swift
+  role_guess: unknown
+  confidence: 0.55
+- path: Shared/AppBehaviorDetector.swift
+  files: 1
+  example: Shared/AppBehaviorDetector.swift
+  role_guess: frontend-or-client-surface
+  confidence: 0.74
+- path: Shared/DebugLogger.swift
+  files: 1
+  example: Shared/DebugLogger.swift
+  role_guess: unknown
+  confidence: 0.55
+- path: Shared/TapEnvironment.swift
+  files: 1
+  example: Shared/TapEnvironment.swift
+  role_guess: unknown
+  confidence: 0.55
+- path: Shared/TapEventSource.swift
+  files: 1
+  example: Shared/TapEventSource.swift
+  role_guess: unknown
+  confidence: 0.55
+- path: Shared/TranslationLanguage.swift
+  files: 1
+  example: Shared/TranslationLanguage.swift
+  role_guess: unknown
+  confidence: 0.55
+- path: Tools/generate_menu_icons.swift
+  files: 1
+  example: Tools/generate_menu_icons.swift
+  role_guess: unknown
+  confidence: 0.55
+- path: XKey/Info.plist
+  files: 1
+  example: XKey/Info.plist
+  role_guess: unknown
+  confidence: 0.55
+startup_hints: []
+key_file_snippets:
+- path: README.md
+  snippet: "# XKey\n\n<div align=\"center\">\n  <img src=\"xkey.png\" alt=\"XKey Logo\"\
+    \ width=\"128\" height=\"128\">\n\n  **Bộ gõ tiếng Việt hiện đại cho macOS**\n\
+    \n  [![Version](https://img.shields.io/badge/dynamic/regex?url=https%3A%2F%2Fraw.githubusercontent.com%2Fxmannv%2Fxkey%2Frefs%2Fheads%2Fmain%2FVersion.xcconfig&search=MARKETING_VERSION%5Cs%2A%3D%5Cs%2A%28%5B0-9.%5D%2B%29&replace=%241&label=version)](https://github.com/xmannv/xkey/releases)\n\
+    \  [![Homebrew Cask](https://img.shields.io/homebrew/cask/v/xkey?label=homebrew%20cask)](https://formulae.brew.sh/cask/xkey)\n\
+    \  [![macOS](https://img.shields.io/badge/macOS-12.0+-green.svg)](https://www.apple.com/macos/)\n\
+    \  [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)\n\
+    </div>\n\n---\n\n#### (Chọn ngôn ngữ dưới đây / Choose your language below)\n\
+    [![Tiếng Việt](https://img.shields.io/badge/Language-Ti%E1%BA%BFng_Vi%E1%BB%87t-red)](README.md)\n\
+    [![English](https://img.shields.io/badge/Language-English-green)](README.en.md)\n\
+    \n---\n\n## Giới thiệu\n\n### Tại sao XKey ra đời?\n\nCác bộ gõ tiếng Việt hiện\
+    \ có trên macOS thường gặp một số vấn đề:\n\n- Không tương thích với các phiên\
+    \ bản macOS mới nhất\n- Còn nhiều lỗi chưa được sửa, ít được cập nhật và bảo trì\n\
+    - Thiếu tính năng hiện đại, khó debug và tùy biến\n\nXKey được xây dựng để giải\
+    \ quyết những vấn đề này.\n\n### Điểm nổi bật\n\n- Hiệu suất cao: viết hoàn toàn\
+    \ bằng Swift native, tối ưu cho macOS\n- Tương thích tốt với các phiên bản macOS\
+    \ mới (12.0+)\n- Ổn định và cập nhật thường xuyên, có auto-update\n- Debug Window\
+    \ để theo dõi hoạt động của bộ gõ theo thời gian thực\n- Các tính năng thông minh:\
+    \ Smart Switch, Macro, Quick Typing, kiểm tra chính tả, từ điển cá nhân\n- Dịch\
+    \ thuật nhanh bằng phím tắt, hỗ trợ hơn 30 ngôn ngữ qua nhiều nhà cung cấp (Google,\
+    \ Tencent, Volcano)\n- Giao diện hiện đại xây dựng bằng SwiftUI\n- Chạy hoàn toàn\
+    \ cục bộ, không thu thập dữ liệu người dùng\n- Hai chế độ hoạt động: CGEvent và\
+    \ Input Method Kit (XKeyIM)\n\n---\n\n## Tính năng chính\n\n<div align=\"center\"\
+    >\n  <img src=\"xkey-panel.png\" alt=\"XKey Settings Panel\" width=\"800\">\n\
+    </div>\n\n### 1. Hai chế độ hoạt động\n\n| Chế độ | Mô tả | Ưu điểm |\n|--------|-------|---------|\n\
+    | **CGEvent** (mặc định) | Dùng CGEvent injection | Không cần cấu hình, hoạt động\
+    \ ngay với mọi app |\n| **XKeyIM** (thử nghiệm) | Dùng Input Method Kit | Mượt\
+    \ hơn trong Terminal, Spotlight, Address Bar |\n\n### 2. Hỗ trợ đa kiểu gõ\n\n\
+    | Kiểu gõ | Mô tả | Ví dụ |\n|---------|-------|-------|\n| **Tự nhận kiểu gõ**\
+    \ | Tự nhận diện Telex hoặc VNI khi gõ | — |\n| **Telex** | Kiểu gõ phổ biến nhất\
+    \ | `tieengs` → tiếng |\n| **VNI** | Kiểu gõ truyền thống dùng số | `tie61ng`\
+    \ → tiếng |\n| **Simple Telex 1** | Telex đơn giản (w không biến đổi) | `tieengs`\
+    \ → tiếng |\n| **Simple Telex 2** | Telex + w cho ư/ơ | `tuaw` → tưa |\n\n###\
+    \ 3. Bảng mã\n\n- **Unicode (UTF-8)** — khuyến nghị, mặc định\n- **TCVN3 (ABC)**\
+    \ — tương thích phần mềm cũ\n- **VNI Windows** — tương thích font VNI\n\n### 4.\
+    \ Gõ nhanh\n\nTăng tốc độ gõ bằng các phím tắt thông minh.\n\n| Tính năng | Chức\
+    \ năng |\n|-----------|-----------|\n| **Quick Telex** | `cc`→`ch`, `gg`→`gi`,\
+    \ `kk`→`kh`, `nn`→`ng`, `pp`→`ph`, `qq`→`qu`, `tt`→`th` |\n| **Quick Start Consonant**\
+    \ | `f`→`ph`, `j`→`gi`, `w`→`qu` (đầu từ) |\n| **Quick End Consonant** | `g`→`ng`,\
+    \ `h`→`nh`, `k`→`ch` (cuối từ) |\n\n### 5. Macro (thay thế văn bản)\n\nTự động\
+    \ thay thế văn bản bằng Macro:\n\n- Tạo các từ viết tắt tùy chỉnh\n- Import/export\
+    \ danh sách macro (.txt)\n- Tùy chọn tự động viết hoa macro\n- Tùy chọn thêm khoảng\
+    \ trắng sau macro\n- Dùng được cả trong chế độ tiếng Anh\n\n### 6. Công cụ chuyển\
+    \ đổi văn bản\n\nTruy cập nhanh bằng phím tắt tùy chỉnh.\n\n| Tính năng | Mô tả\
+    \ |\n|-----------|-------|\n| **Chữ hoa/thường** | Viết hoa tất cả, viết thường\
+    \ tất cả, viết hoa chữ đầu, viết hoa mỗi từ |\n| **Bảng mã** | Chuyển đổi Unicode\
+    \ ↔ TCVN3 ↔ VNI |\n| **Xóa dấu** | Chuyển từ có dấu sang không dấu |\n\n### 7.\
+    \ Kiểm tra chính tả (thử nghiệm)\n\n- Dùng từ điển tiếng Việt (~200KB, giấy phép\
+    \ GPL)\n- Tự động khôi phục khi gõ sai chính tả\n- Hỗ trợ cả dấu mới (xoà) và\
+    \ dấu cũ (xóa)\n- Từ điển cá nhân: thêm từ riêng để bỏ qua kiểm tra\n- Import/export\
+    \ từ điển cá nhân\n\n### 8. Smart Switch\n\n- Nhớ ngôn ngữ theo từng ứng dụng\n\
+    - Hỗ trợ phát hiện các app overlay như Spotlight/Raycast/Alfred\n- Tự động chuyển\
+    \ ngôn ngữ khi chuyển app\n\n### 9. Dịch thuật nhanh\n\nDịch văn bản ngay trong\
+    \ mọi ứng dụng bằng phím tắt tùy chỉnh. XKey cung cấp hai hướng dịch, mỗi hướng\
+    \ có phím tắt riêng và các tùy chọn hoạt động độc lập.\n\n#### Dịch sang ngôn\
+    \ ngữ đích\n\nDịch văn bản đang chọn (hoặc toàn bộ nội dung) từ ngôn ngữ nguồn\
+    \ sang ngôn ngữ đích.\n\nCách dùng:\n1. Chọn (bôi đen) text cần dịch trong bất\
+    \ kỳ ứng dụng nào\n2. Nhấn phím tắt (mặc định: `⌘ + ⇧ + T`)\n3. Kết quả được xử\
+    \ lý theo các tùy chọn đã bật\n\nNếu không chọn text, XKey sẽ dịch toàn bộ nội\
+    \ dung trong ô nhập liệu.\n\n| Tùy chọn | Mặc định | Mô tả |\n|----------|----------|-------|\n\
+    | **Thay thế text gốc** | Bật | Thay thế text đang chọn bằng bản dịch |\n| **Copy\
+    \ vào clipboard** | Bật | Copy bản dịch vào clipboard |\n| **Hiển thị popup**\
+    \ | Tắt | Hiển thị bản"
+- path: CLAUDE.md
+  snippet: '# CLAUDE.md
+
+
+    ## Project Workflow Context
+
+
+    - Generated at: `2026-10-12T07:09:48+00:00`
+
+    - Workflow project type: `brownfield`
+
+    - Workflow track: `lite`
+
+
+    ## Project Context
+
+
+    - Full context: `docs/project-context.md`
+
+    - Architecture: `docs/project-architecture.md`
+
+    - Spec & acceptance criteria: `docs/project-spec.md`
+
+
+    ## Working Agreements
+
+
+    1. Run `/workflow-status --sync` before major work.
+
+    2. Run major steps in fresh sessions: `/plan`, `/cook`, `/fix`, `/debug`, `/test`,
+    `/code-review`, `/git`.
+
+    3. For brownfield discovery, run `/document-project` before planning.
+
+    4. For medium/large/hotfix work, run `/check-readiness` before `/cook`.
+
+
+    ## Non-Negotiable Engineering Guardrails
+
+
+    <!-- WORKFLOW-GUARDRAILS-START -->
+
+    1. No hard-coded secrets/config:
+
+    - Never hard-code API keys, tokens, passwords, DSN, or env-specific endpoints.
+
+    - Use environment variables or secure config providers.
+
+    2. Lint and conventions are mandatory:
+
+    - Do not mark work done unless lint/style/convention checks pass.
+
+    3. Typecheck and build are mandatory when applicable:
+
+    - Changes that affect typed/buildable code must pass typecheck and build.
+
+    4. Tests are mandatory when applicable:
+
+    - New code and changed behavior require passing tests for impacted scope.
+
+    5. Security baseline is mandatory:
+
+    - Run secret scan and dependency audit before release/review sign-off.
+
+    6. Evidence before completion claim:
+
+    - Never claim \"done\" without command outputs showing pass status.
+
+    <!-- WORKFLOW-GUARDRAILS-END -->
+
+
+    ## Notes
+
+
+    - Keep this file concise and project-specific.
+
+    - Add architecture and build/test conventions below this section.
+
+
+    <!-- WORKFLOW-INJECT-START -->
+
+    ## Workflow Inject (Auto)
+
+    - Updated at: `2026-10-12T07:09:48+00:00`
+
+    - Project type: `brownfield`
+
+    - Track: `lite`
+
+    - Session guidance: start a fresh session for major workflow steps.
+
+    <!-- WORKFLOW-INJECT-END -->'
+- path: AGENTS.md
+  snippet: '# AGENTS.md
+
+
+    ## Project Workflow Context
+
+
+    - Workflow project type: `brownfield`
+
+    - Workflow track: `lite`
+
+    - Primary flow: `/workflow-status --sync` → follow single next action.
+
+    - Major steps in fresh sessions: `/plan`, `/cook`, `/fix`, `/test`, `/code-review`.
+
+
+    ## Project Context
+
+
+    - Full context: `docs/project-context.md`
+
+    - Architecture: `docs/project-architecture.md`
+
+    - Spec & acceptance criteria: `docs/project-spec.md`
+
+
+    ## Non-Negotiable Engineering Guardrails
+
+
+    <!-- WORKFLOW-GUARDRAILS-START -->
+
+    1. No hard-coded secrets/config:
+
+    - Never hard-code API keys, tokens, passwords, DSN, or env-specific endpoints.
+
+    - Use environment variables or secure config providers.
+
+    2. Lint and conventions are mandatory:
+
+    - Do not mark work done unless lint/style/convention checks pass.
+
+    3. Typecheck and build are mandatory when applicable:
+
+    - Changes that affect typed/buildable code must pass typecheck and build.
+
+    4. Tests are mandatory when applicable:
+
+    - New code and changed behavior require passing tests for impacted scope.
+
+    5. Security baseline is mandatory:
+
+    - Run secret scan and dependency audit before release/review sign-off.
+
+    6. Evidence before completion claim:
+
+    - Never claim "done" without command outputs showing pass status.
+
+    <!-- WORKFLOW-GUARDRAILS-END -->
+
+
+    <!-- WORKFLOW-INJECT-START -->
+
+    ## Workflow Inject (Auto)
+
+    - Updated at: `2026-10-12T07:09:48+00:00`
+
+    - Project type: `brownfield`
+
+    - Track: `lite`
+
+    - Session guidance: start a fresh session for major workflow steps.
+
+    <!-- WORKFLOW-INJECT-END -->'
+- path: XKeyIM/README.md
+  snippet: "# XKeyIM - Input Method Kit Vietnamese\n\nXKeyIM là Input Method sử dụng\
+    \ Input Method Kit (IMKit) của Apple, cung cấp trải nghiệm gõ tiếng Việt mượt\
+    \ mà hơn trong Terminal và IDE.\n\n## Ưu điểm so với CGEvent injection\n\n| Aspect\
+    \ | CGEvent (XKey) | IMKit (XKeyIM) |\n|--------|----------------|----------------|\n\
+    | Flickering | Có thể xảy ra | Không có |\n| Terminal support | Cần tune timing\
+    \ | Native support |\n| Setup | Không cần | Cần enable trong System Settings |\n\
+    \n## Bundle Identifiers\n\n| Component | Bundle ID |\n|-----------|-----------|\n\
+    | XKey (main app) | `com.codetay.XKey` |\n| XKeyIM (input method) | `com.codetay.inputmethod.XKey`\
+    \ |\n| App Group | `group.com.codetay.xkey` |\n\n> **Lưu ý:** Bundle ID của Input\
+    \ Method cần có format `*.inputmethod.*` để macOS nhận diện đúng.\n\n## Cài đặt\n\
+    \n### Cách 1: Từ XKey Settings\n1. Mở XKey Settings → Nâng cao\n2. Bật \"IMKit\
+    \ Mode\"\n3. Click \"Cài đặt XKeyIM...\"\n4. Làm theo hướng dẫn để copy XKeyIM.app\
+    \ vào `~/Library/Input Methods/`\n\n### Cách 2: Manual\n1. Build XKeyIM target\
+    \ trong Xcode\n2. Copy `XKeyIM.app` vào `~/Library/Input Methods/`\n3. Logout/Login\
+    \ lại\n4. Mở System Settings → Keyboard → Input Sources\n5. Click \"+\" và thêm\
+    \ \"XKey Vietnamese\"\n\n## Cấu trúc Project\n\n```\nXKeyIM/\n├── Info.plist \
+    \                 # IMKit configuration\n├── XKeyIM.entitlements         # Entitlements\
+    \ for debug build\n├── XKeyIMRelease.entitlements  # Entitlements for release\
+    \ build\n├── main.swift                  # Entry point\n├── XKeyIMController.swift\
+    \      # IMKInputController subclass\n├── en.lproj/\n│   └── InfoPlist.strings\
+    \       # English localization\n├── vi.lproj/\n│   └── InfoPlist.strings     \
+    \  # Vietnamese localization\n└── README.md                   # This file\n```\n\
+    \n## Build Instructions\n\n### Bước 1: Tạo XKeyIM Target trong Xcode\n\n1. Mở\
+    \ `XKey.xcodeproj` trong Xcode\n2. File → New → Target...\n3. Chọn **macOS** →\
+    \ **App** → Next\n4. Cấu hình:\n   - Product Name: `XKeyIM`\n   - Bundle Identifier:\
+    \ `com.codetay.inputmethod.XKey`\n   - Language: Swift\n   - User Interface: None\n\
+    5. Click **Finish**\n\n### Bước 2: Cấu hình Target Settings\n\n1. Chọn **XKeyIM\
+    \ target** trong Project Navigator\n\n2. Tab **General**:\n   - Bundle Identifier:\
+    \ `com.codetay.inputmethod.XKey`\n   - Minimum Deployments: macOS 12.0+\n\n3.\
+    \ Tab **Build Settings**:\n   - **Info.plist File** = `XKeyIM/Info.plist`\n  \
+    \ - **Code Signing Entitlements** = `XKeyIM/XKeyIMRelease.entitlements` (cho Release)\n\
+    \n4. Tab **Signing & Capabilities**:\n   - Chọn Team\n   - Click **+ Capability**\
+    \ → Thêm **App Groups**\n   - Chọn `group.com.codetay.inputmethod.XKey`\n\n###\
+    \ Bước 3: Setup App Group trong Apple Developer Portal\n\n1. Đăng nhập https://developer.apple.com\n\
+    2. Certificates, Identifiers & Profiles → Identifiers\n\n**Tạo App Group (nếu\
+    \ chưa có):**\n1. Click \"+\" → App Groups\n2. Description: `XKey Shared Settings`\n\
+    3. Identifier: `group.com.codetay.inputmethod.XKey`\n\n**Tạo App ID cho XKeyIM:**\n\
+    1. Click \"+\" → App IDs → App\n2. Platform: macOS\n3. Description: `XKey Input\
+    \ Method`\n4. Bundle ID: `com.codetay.inputmethod.XKey`\n5. Capabilities: ✅ App\
+    \ Groups\n6. Chọn `group.com.codetay.inputmethod.XKey`\n\n**Tạo Provisioning Profile:**\n\
+    1. Profiles → Click \"+\"\n2. Chọn \"macOS App Development\" hoặc \"Developer\
+    \ ID Application\"\n3. Chọn App ID: `com.codetay.inputmethod.XKey`\n4. Chọn certificate\
+    \ và devices\n5. Download và double-click để install\n\n### Bước 4: Thêm Source\
+    \ Files vào Target\n\nXKeyIM cần dùng chung code engine với XKey. Trong Xcode:\n\
+    \n1. Chọn các file trong **Project Navigator**\n2. Mở **File Inspector** (panel\
+    \ bên phải)\n3. Trong section **Target Membership**, check ✅ **XKeyIM**\n\n**Các\
+    \ file cần check Target Membership:**\n```\nXKey/Core/Engine/\n├── VNEngine.swift\
+    \           ✅\n├── VNCharacter.swift        ✅\n├── SpellChecker.swift       ✅\n\
+    └── ... (các file engine khác)\n\nXKey/Core/Models/\n├── InputMethod.swift   \
+    \     ✅\n├── CodeTable.swift          ✅\n└── ... (các model cần thiết)\n```\n\n\
+    ### Bước 5: Build\n\n**Sử dụng build script:**\n```bash\ncd XKey\n./build_release.sh\n\
+    ```\n\n**Hoặc build thủ công:**\n```bash\nxcodebuild -project XKey.xcodeproj \\\
+    \n  -scheme XKeyIM \\\n  -configuration Release \\\n  build\n```\n\n### Bước 6:\
+    \ Install\n\n```bash\n# Copy vào Input Methods\ncp -R Release/XKeyIM.app ~/Library/Input\\\
+    \ Methods/\n\n# Logout/Login để macOS nhận diện\n```\n\n### Bước 7: Enable Input\
+    \ Source\n\n1. Mở **System Settings** → **Keyboard** → **Input Sources**\n2. Click\
+    \ **Edit...** → **+**\n3. Tìm \"Vietnamese\" → Chọn \"XKey Vietnamese\"\n4. Click\
+    \ **Add**\n\n## Info.plist Configuration\n\n```xml\n<?xml version=\"1.0\" encoding=\"\
+    UTF-8\"?>\n<!DOCTYPE plist PUBLIC \"-//Apple//DTD PLIST 1.0//EN\" \"http://www.apple.com/DTDs/PropertyList-1.0.dtd\"\
+    >\n<plist version=\"1.0\">\n<dict>\n    <key>CFBundleIdentifier</key>\n    <string>com.codetay.inputmethod.XKey</string>\n\
+    \    \n    <key>CFBundleDisplayName</key>\n    <string>XKey Vietnamese</string>\n\
+    \    \n    <key>InputMethodConnectionName</key>\n    <string>XKeyIM_Connection</string>\n\
+    \    \n    <key>InputMethodServerControllerClass</key>\n    <string>XKeyIMController</string>\n\
+    \    \n    <key>InputMethodServerDelegateClass</key>"

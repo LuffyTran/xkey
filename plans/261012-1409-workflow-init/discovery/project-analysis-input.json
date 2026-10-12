@@ -1,0 +1,265 @@
+{
+  "generated_at": "2026-10-12T07:09:49+00:00",
+  "root_path": "/Volumes/Projects/github-lufftran/xkey",
+  "scan_mode": "deep",
+  "heuristic_summary": {
+    "project_purpose_guess": "**B\u1ed9 g\u00f5 ti\u1ebfng Vi\u1ec7t hi\u1ec7n \u0111\u1ea1i cho macOS**",
+    "purpose_confidence": 0.88,
+    "architecture_guess": "Architecture appears mixed or monolithic; deeper scan may be required for precise boundaries.",
+    "detected_stacks": [],
+    "dominant_languages": [],
+    "serious_findings": [
+      {
+        "severity": "medium",
+        "message": "No obvious automated test footprint found.",
+        "path": null
+      }
+    ]
+  },
+  "scan_stats": {
+    "files_scanned": 246,
+    "new_files_scanned": 126,
+    "directories_scanned": 41,
+    "top_level_dirs": [
+      "Shared",
+      "Tools",
+      "XKey",
+      "XKey.xcodeproj",
+      "XKeyIM",
+      "XKeyTests",
+      "docs",
+      "plans"
+    ]
+  },
+  "repository_index": [
+    {
+      "path": "XKey/UI",
+      "files": 43,
+      "example": "XKey/UI/ConvertToolViewModel.swift",
+      "role_guess": "frontend-or-client-surface",
+      "confidence": 0.74
+    },
+    {
+      "path": "XKey/Core",
+      "files": 28,
+      "example": "XKey/Core/Engine/ConvertTool.swift",
+      "role_guess": "unknown",
+      "confidence": 0.55
+    },
+    {
+      "path": "XKey/Assets.xcassets",
+      "files": 21,
+      "example": "XKey/Assets.xcassets/Contents.json",
+      "role_guess": "unknown",
+      "confidence": 0.55
+    },
+    {
+      "path": "Shared/InputSession",
+      "files": 12,
+      "example": "Shared/InputSession/AppPolicyRuntime.swift",
+      "role_guess": "unknown",
+      "confidence": 0.55
+    },
+    {
+      "path": "XKey/Utilities",
+      "files": 12,
+      "example": "XKey/Utilities/AXErrorExtension.swift",
+      "role_guess": "unknown",
+      "confidence": 0.55
+    },
+    {
+      "path": "XKeyIM/Assets.xcassets",
+      "files": 10,
+      "example": "XKeyIM/Assets.xcassets/Contents.json",
+      "role_guess": "unknown",
+      "confidence": 0.55
+    },
+    {
+      "path": "plans/261012-1409-workflow-init",
+      "files": 10,
+      "example": "plans/261012-1409-workflow-init/brainstorm/brainstorm-v01.md",
+      "role_guess": "unknown",
+      "confidence": 0.55
+    },
+    {
+      "path": "XKey/EventHandling",
+      "files": 7,
+      "example": "XKey/EventHandling/AdvancedInjectionMethods.swift",
+      "role_guess": "unknown",
+      "confidence": 0.55
+    },
+    {
+      "path": "XKey/App",
+      "files": 6,
+      "example": "XKey/App/AppDelegate.swift",
+      "role_guess": "frontend-or-client-surface",
+      "confidence": 0.74
+    },
+    {
+      "path": "docs/superpowers",
+      "files": 4,
+      "example": "docs/superpowers/plans/2026-08-28-xkeyim-event-tap.md",
+      "role_guess": "unknown",
+      "confidence": 0.55
+    },
+    {
+      "path": "XKey.xcodeproj/xcshareddata",
+      "files": 3,
+      "example": "XKey.xcodeproj/xcshareddata/xcschemes/XKey.xcscheme",
+      "role_guess": "unknown",
+      "confidence": 0.55
+    },
+    {
+      "path": "XKey/InputMethod",
+      "files": 2,
+      "example": "XKey/InputMethod/IMKitResearch.md",
+      "role_guess": "unknown",
+      "confidence": 0.55
+    },
+    {
+      "path": "AGENTS.md",
+      "files": 1,
+      "example": "AGENTS.md",
+      "role_guess": "unknown",
+      "confidence": 0.55
+    },
+    {
+      "path": "CLAUDE.md",
+      "files": 1,
+      "example": "CLAUDE.md",
+      "role_guess": "unknown",
+      "confidence": 0.55
+    },
+    {
+      "path": "LICENSE",
+      "files": 1,
+      "example": "LICENSE",
+      "role_guess": "unknown",
+      "confidence": 0.55
+    },
+    {
+      "path": "QWERTZ_SUPPORT.md",
+      "files": 1,
+      "example": "QWERTZ_SUPPORT.md",
+      "role_guess": "unknown",
+      "confidence": 0.55
+    },
+    {
+      "path": "README.en.md",
+      "files": 1,
+      "example": "README.en.md",
+      "role_guess": "unknown",
+      "confidence": 0.55
+    },
+    {
+      "path": "README.md",
+      "files": 1,
+      "example": "README.md",
+      "role_guess": "unknown",
+      "confidence": 0.55
+    },
+    {
+      "path": "Version.xcconfig",
+      "files": 1,
+      "example": "Version.xcconfig",
+      "role_guess": "unknown",
+      "confidence": 0.55
+    },
+    {
+      "path": "build_release.sh",
+      "files": 1,
+      "example": "build_release.sh",
+      "role_guess": "frontend-or-client-surface",
+      "confidence": 0.74
+    },
+    {
+      "path": "xkey-panel.png",
+      "files": 1,
+      "example": "xkey-panel.png",
+      "role_guess": "unknown",
+      "confidence": 0.55
+    },
+    {
+      "path": "xkey.png",
+      "files": 1,
+      "example": "xkey.png",
+      "role_guess": "unknown",
+      "confidence": 0.55
+    },
+    {
+      "path": "Shared/AXHelper.swift",
+      "files": 1,
+      "example": "Shared/AXHelper.swift",
+      "role_guess": "unknown",
+      "confidence": 0.55
+    },
+    {
+      "path": "Shared/AppBehaviorDetector.swift",
+      "files": 1,
+      "example": "Shared/AppBehaviorDetector.swift",
+      "role_guess": "frontend-or-client-surface",
+      "confidence": 0.74
+    },
+    {
+      "path": "Shared/DebugLogger.swift",
+      "files": 1,
+      "example": "Shared/DebugLogger.swift",
+      "role_guess": "unknown",
+      "confidence": 0.55
+    },
+    {
+      "path": "Shared/TapEnvironment.swift",
+      "files": 1,
+      "example": "Shared/TapEnvironment.swift",
+      "role_guess": "unknown",
+      "confidence": 0.55
+    },
+    {
+      "path": "Shared/TapEventSource.swift",
+      "files": 1,
+      "example": "Shared/TapEventSource.swift",
+      "role_guess": "unknown",
+      "confidence": 0.55
+    },
+    {
+      "path": "Shared/TranslationLanguage.swift",
+      "files": 1,
+      "example": "Shared/TranslationLanguage.swift",
+      "role_guess": "unknown",
+      "confidence": 0.55
+    },
+    {
+      "path": "Tools/generate_menu_icons.swift",
+      "files": 1,
+      "example": "Tools/generate_menu_icons.swift",
+      "role_guess": "unknown",
+      "confidence": 0.55
+    },
+    {
+      "path": "XKey/Info.plist",
+      "files": 1,
+      "example": "XKey/Info.plist",
+      "role_guess": "unknown",
+      "confidence": 0.55
+    }
+  ],
+  "startup_hints": [],
+  "key_file_snippets": [
+    {
+      "path": "README.md",
+      "snippet": "# XKey\n\n<div align=\"center\">\n  <img src=\"xkey.png\" alt=\"XKey Logo\" width=\"128\" height=\"128\">\n\n  **B\u1ed9 g\u00f5 ti\u1ebfng Vi\u1ec7t hi\u1ec7n \u0111\u1ea1i cho macOS**\n\n  [![Version](https://img.shields.io/badge/dynamic/regex?url=https%3A%2F%2Fraw.githubusercontent.com%2Fxmannv%2Fxkey%2Frefs%2Fheads%2Fmain%2FVersion.xcconfig&search=MARKETING_VERSION%5Cs%2A%3D%5Cs%2A%28%5B0-9.%5D%2B%29&replace=%241&label=version)](https://github.com/xmannv/xkey/releases)\n  [![Homebrew Cask](https://img.shields.io/homebrew/cask/v/xkey?label=homebrew%20cask)](https://formulae.brew.sh/cask/xkey)\n  [![macOS](https://img.shields.io/badge/macOS-12.0+-green.svg)](https://www.apple.com/macos/)\n  [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)\n</div>\n\n---\n\n#### (Ch\u1ecdn ng\u00f4n ng\u1eef d\u01b0\u1edbi \u0111\u00e2y / Choose your language below)\n[![Ti\u1ebfng Vi\u1ec7t](https://img.shields.io/badge/Language-Ti%E1%BA%BFng_Vi%E1%BB%87t-red)](README.md)\n[![English](https://img.shields.io/badge/Language-English-green)](README.en.md)\n\n---\n\n## Gi\u1edbi thi\u1ec7u\n\n### T\u1ea1i sao XKey ra \u0111\u1eddi?\n\nC\u00e1c b\u1ed9 g\u00f5 ti\u1ebfng Vi\u1ec7t hi\u1ec7n c\u00f3 tr\u00ean macOS th\u01b0\u1eddng g\u1eb7p m\u1ed9t s\u1ed1 v\u1ea5n \u0111\u1ec1:\n\n- Kh\u00f4ng t\u01b0\u01a1ng th\u00edch v\u1edbi c\u00e1c phi\u00ean b\u1ea3n macOS m\u1edbi nh\u1ea5t\n- C\u00f2n nhi\u1ec1u l\u1ed7i ch\u01b0a \u0111\u01b0\u1ee3c s\u1eeda, \u00edt \u0111\u01b0\u1ee3c c\u1eadp nh\u1eadt v\u00e0 b\u1ea3o tr\u00ec\n- Thi\u1ebfu t\u00ednh n\u0103ng hi\u1ec7n \u0111\u1ea1i, kh\u00f3 debug v\u00e0 t\u00f9y bi\u1ebfn\n\nXKey \u0111\u01b0\u1ee3c x\u00e2y d\u1ef1ng \u0111\u1ec3 gi\u1ea3i quy\u1ebft nh\u1eefng v\u1ea5n \u0111\u1ec1 n\u00e0y.\n\n### \u0110i\u1ec3m n\u1ed5i b\u1eadt\n\n- Hi\u1ec7u su\u1ea5t cao: vi\u1ebft ho\u00e0n to\u00e0n b\u1eb1ng Swift native, t\u1ed1i \u01b0u cho macOS\n- T\u01b0\u01a1ng th\u00edch t\u1ed1t v\u1edbi c\u00e1c phi\u00ean b\u1ea3n macOS m\u1edbi (12.0+)\n- \u1ed4n \u0111\u1ecbnh v\u00e0 c\u1eadp nh\u1eadt th\u01b0\u1eddng xuy\u00ean, c\u00f3 auto-update\n- Debug Window \u0111\u1ec3 theo d\u00f5i ho\u1ea1t \u0111\u1ed9ng c\u1ee7a b\u1ed9 g\u00f5 theo th\u1eddi gian th\u1ef1c\n- C\u00e1c t\u00ednh n\u0103ng th\u00f4ng minh: Smart Switch, Macro, Quick Typing, ki\u1ec3m tra ch\u00ednh t\u1ea3, t\u1eeb \u0111i\u1ec3n c\u00e1 nh\u00e2n\n- D\u1ecbch thu\u1eadt nhanh b\u1eb1ng ph\u00edm t\u1eaft, h\u1ed7 tr\u1ee3 h\u01a1n 30 ng\u00f4n ng\u1eef qua nhi\u1ec1u nh\u00e0 cung c\u1ea5p (Google, Tencent, Volcano)\n- Giao di\u1ec7n hi\u1ec7n \u0111\u1ea1i x\u00e2y d\u1ef1ng b\u1eb1ng SwiftUI\n- Ch\u1ea1y ho\u00e0n to\u00e0n c\u1ee5c b\u1ed9, kh\u00f4ng thu th\u1eadp d\u1eef li\u1ec7u ng\u01b0\u1eddi d\u00f9ng\n- Hai ch\u1ebf \u0111\u1ed9 ho\u1ea1t \u0111\u1ed9ng: CGEvent v\u00e0 Input Method Kit (XKeyIM)\n\n---\n\n## T\u00ednh n\u0103ng ch\u00ednh\n\n<div align=\"center\">\n  <img src=\"xkey-panel.png\" alt=\"XKey Settings Panel\" width=\"800\">\n</div>\n\n### 1. Hai ch\u1ebf \u0111\u1ed9 ho\u1ea1t \u0111\u1ed9ng\n\n| Ch\u1ebf \u0111\u1ed9 | M\u00f4 t\u1ea3 | \u01afu \u0111i\u1ec3m |\n|--------|-------|---------|\n| **CGEvent** (m\u1eb7c \u0111\u1ecbnh) | D\u00f9ng CGEvent injection | Kh\u00f4ng c\u1ea7n c\u1ea5u h\u00ecnh, ho\u1ea1t \u0111\u1ed9ng ngay v\u1edbi m\u1ecdi app |\n| **XKeyIM** (th\u1eed nghi\u1ec7m) | D\u00f9ng Input Method Kit | M\u01b0\u1ee3t h\u01a1n trong Terminal, Spotlight, Address Bar |\n\n### 2. H\u1ed7 tr\u1ee3 \u0111a ki\u1ec3u g\u00f5\n\n| Ki\u1ec3u g\u00f5 | M\u00f4 t\u1ea3 | V\u00ed d\u1ee5 |\n|---------|-------|-------|\n| **T\u1ef1 nh\u1eadn ki\u1ec3u g\u00f5** | T\u1ef1 nh\u1eadn di\u1ec7n Telex ho\u1eb7c VNI khi g\u00f5 | \u2014 |\n| **Telex** | Ki\u1ec3u g\u00f5 ph\u1ed5 bi\u1ebfn nh\u1ea5t | `tieengs` \u2192 ti\u1ebfng |\n| **VNI** | Ki\u1ec3u g\u00f5 truy\u1ec1n th\u1ed1ng d\u00f9ng s\u1ed1 | `tie61ng` \u2192 ti\u1ebfng |\n| **Simple Telex 1** | Telex \u0111\u01a1n gi\u1ea3n (w kh\u00f4ng bi\u1ebfn \u0111\u1ed5i) | `tieengs` \u2192 ti\u1ebfng |\n| **Simple Telex 2** | Telex + w cho \u01b0/\u01a1 | `tuaw` \u2192 t\u01b0a |\n\n### 3. B\u1ea3ng m\u00e3\n\n- **Unicode (UTF-8)** \u2014 khuy\u1ebfn ngh\u1ecb, m\u1eb7c \u0111\u1ecbnh\n- **TCVN3 (ABC)** \u2014 t\u01b0\u01a1ng th\u00edch ph\u1ea7n m\u1ec1m c\u0169\n- **VNI Windows** \u2014 t\u01b0\u01a1ng th\u00edch font VNI\n\n### 4. G\u00f5 nhanh\n\nT\u0103ng t\u1ed1c \u0111\u1ed9 g\u00f5 b\u1eb1ng c\u00e1c ph\u00edm t\u1eaft th\u00f4ng minh.\n\n| T\u00ednh n\u0103ng | Ch\u1ee9c n\u0103ng |\n|-----------|-----------|\n| **Quick Telex** | `cc`\u2192`ch`, `gg`\u2192`gi`, `kk`\u2192`kh`, `nn`\u2192`ng`, `pp`\u2192`ph`, `qq`\u2192`qu`, `tt`\u2192`th` |\n| **Quick Start Consonant** | `f`\u2192`ph`, `j`\u2192`gi`, `w`\u2192`qu` (\u0111\u1ea7u t\u1eeb) |\n| **Quick End Consonant** | `g`\u2192`ng`, `h`\u2192`nh`, `k`\u2192`ch` (cu\u1ed1i t\u1eeb) |\n\n### 5. Macro (thay th\u1ebf v\u0103n b\u1ea3n)\n\nT\u1ef1 \u0111\u1ed9ng thay th\u1ebf v\u0103n b\u1ea3n b\u1eb1ng Macro:\n\n- T\u1ea1o c\u00e1c t\u1eeb vi\u1ebft t\u1eaft t\u00f9y ch\u1ec9nh\n- Import/export danh s\u00e1ch macro (.txt)\n- T\u00f9y ch\u1ecdn t\u1ef1 \u0111\u1ed9ng vi\u1ebft hoa macro\n- T\u00f9y ch\u1ecdn th\u00eam kho\u1ea3ng tr\u1eafng sau macro\n- D\u00f9ng \u0111\u01b0\u1ee3c c\u1ea3 trong ch\u1ebf \u0111\u1ed9 ti\u1ebfng Anh\n\n### 6. C\u00f4ng c\u1ee5 chuy\u1ec3n \u0111\u1ed5i v\u0103n b\u1ea3n\n\nTruy c\u1eadp nhanh b\u1eb1ng ph\u00edm t\u1eaft t\u00f9y ch\u1ec9nh.\n\n| T\u00ednh n\u0103ng | M\u00f4 t\u1ea3 |\n|-----------|-------|\n| **Ch\u1eef hoa/th\u01b0\u1eddng** | Vi\u1ebft hoa t\u1ea5t c\u1ea3, vi\u1ebft th\u01b0\u1eddng t\u1ea5t c\u1ea3, vi\u1ebft hoa ch\u1eef \u0111\u1ea7u, vi\u1ebft hoa m\u1ed7i t\u1eeb |\n| **B\u1ea3ng m\u00e3** | Chuy\u1ec3n \u0111\u1ed5i Unicode \u2194 TCVN3 \u2194 VNI |\n| **X\u00f3a d\u1ea5u** | Chuy\u1ec3n t\u1eeb c\u00f3 d\u1ea5u sang kh\u00f4ng d\u1ea5u |\n\n### 7. Ki\u1ec3m tra ch\u00ednh t\u1ea3 (th\u1eed nghi\u1ec7m)\n\n- D\u00f9ng t\u1eeb \u0111i\u1ec3n ti\u1ebfng Vi\u1ec7t (~200KB, gi\u1ea5y ph\u00e9p GPL)\n- T\u1ef1 \u0111\u1ed9ng kh\u00f4i ph\u1ee5c khi g\u00f5 sai ch\u00ednh t\u1ea3\n- H\u1ed7 tr\u1ee3 c\u1ea3 d\u1ea5u m\u1edbi (xo\u00e0) v\u00e0 d\u1ea5u c\u0169 (x\u00f3a)\n- T\u1eeb \u0111i\u1ec3n c\u00e1 nh\u00e2n: th\u00eam t\u1eeb ri\u00eang \u0111\u1ec3 b\u1ecf qua ki\u1ec3m tra\n- Import/export t\u1eeb \u0111i\u1ec3n c\u00e1 nh\u00e2n\n\n### 8. Smart Switch\n\n- Nh\u1edb ng\u00f4n ng\u1eef theo t\u1eebng \u1ee9ng d\u1ee5ng\n- H\u1ed7 tr\u1ee3 ph\u00e1t hi\u1ec7n c\u00e1c app overlay nh\u01b0 Spotlight/Raycast/Alfred\n- T\u1ef1 \u0111\u1ed9ng chuy\u1ec3n ng\u00f4n ng\u1eef khi chuy\u1ec3n app\n\n### 9. D\u1ecbch thu\u1eadt nhanh\n\nD\u1ecbch v\u0103n b\u1ea3n ngay trong m\u1ecdi \u1ee9ng d\u1ee5ng b\u1eb1ng ph\u00edm t\u1eaft t\u00f9y ch\u1ec9nh. XKey cung c\u1ea5p hai h\u01b0\u1edbng d\u1ecbch, m\u1ed7i h\u01b0\u1edbng c\u00f3 ph\u00edm t\u1eaft ri\u00eang v\u00e0 c\u00e1c t\u00f9y ch\u1ecdn ho\u1ea1t \u0111\u1ed9ng \u0111\u1ed9c l\u1eadp.\n\n#### D\u1ecbch sang ng\u00f4n ng\u1eef \u0111\u00edch\n\nD\u1ecbch v\u0103n b\u1ea3n \u0111ang ch\u1ecdn (ho\u1eb7c to\u00e0n b\u1ed9 n\u1ed9i dung) t\u1eeb ng\u00f4n ng\u1eef ngu\u1ed3n sang ng\u00f4n ng\u1eef \u0111\u00edch.\n\nC\u00e1ch d\u00f9ng:\n1. Ch\u1ecdn (b\u00f4i \u0111en) text c\u1ea7n d\u1ecbch trong b\u1ea5t k\u1ef3 \u1ee9ng d\u1ee5ng n\u00e0o\n2. Nh\u1ea5n ph\u00edm t\u1eaft (m\u1eb7c \u0111\u1ecbnh: `\u2318 + \u21e7 + T`)\n3. K\u1ebft qu\u1ea3 \u0111\u01b0\u1ee3c x\u1eed l\u00fd theo c\u00e1c t\u00f9y ch\u1ecdn \u0111\u00e3 b\u1eadt\n\nN\u1ebfu kh\u00f4ng ch\u1ecdn text, XKey s\u1ebd d\u1ecbch to\u00e0n b\u1ed9 n\u1ed9i dung trong \u00f4 nh\u1eadp li\u1ec7u.\n\n| T\u00f9y ch\u1ecdn | M\u1eb7c \u0111\u1ecbnh | M\u00f4 t\u1ea3 |\n|----------|----------|-------|\n| **Thay th\u1ebf text g\u1ed1c** | B\u1eadt | Thay th\u1ebf text \u0111ang ch\u1ecdn b\u1eb1ng b\u1ea3n d\u1ecbch |\n| **Copy v\u00e0o clipboard** | B\u1eadt | Copy b\u1ea3n d\u1ecbch v\u00e0o clipboard |\n| **Hi\u1ec3n th\u1ecb popup** | T\u1eaft | Hi\u1ec3n th\u1ecb b\u1ea3n"
+    },
+    {
+      "path": "CLAUDE.md",
+      "snippet": "# CLAUDE.md\n\n## Project Workflow Context\n\n- Generated at: `2026-10-12T07:09:48+00:00`\n- Workflow project type: `brownfield`\n- Workflow track: `lite`\n\n## Project Context\n\n- Full context: `docs/project-context.md`\n- Architecture: `docs/project-architecture.md`\n- Spec & acceptance criteria: `docs/project-spec.md`\n\n## Working Agreements\n\n1. Run `/workflow-status --sync` before major work.\n2. Run major steps in fresh sessions: `/plan`, `/cook`, `/fix`, `/debug`, `/test`, `/code-review`, `/git`.\n3. For brownfield discovery, run `/document-project` before planning.\n4. For medium/large/hotfix work, run `/check-readiness` before `/cook`.\n\n## Non-Negotiable Engineering Guardrails\n\n<!-- WORKFLOW-GUARDRAILS-START -->\n1. No hard-coded secrets/config:\n- Never hard-code API keys, tokens, passwords, DSN, or env-specific endpoints.\n- Use environment variables or secure config providers.\n2. Lint and conventions are mandatory:\n- Do not mark work done unless lint/style/convention checks pass.\n3. Typecheck and build are mandatory when applicable:\n- Changes that affect typed/buildable code must pass typecheck and build.\n4. Tests are mandatory when applicable:\n- New code and changed behavior require passing tests for impacted scope.\n5. Security baseline is mandatory:\n- Run secret scan and dependency audit before release/review sign-off.\n6. Evidence before completion claim:\n- Never claim \\\"done\\\" without command outputs showing pass status.\n<!-- WORKFLOW-GUARDRAILS-END -->\n\n## Notes\n\n- Keep this file concise and project-specific.\n- Add architecture and build/test conventions below this section.\n\n<!-- WORKFLOW-INJECT-START -->\n## Workflow Inject (Auto)\n- Updated at: `2026-10-12T07:09:48+00:00`\n- Project type: `brownfield`\n- Track: `lite`\n- Session guidance: start a fresh session for major workflow steps.\n<!-- WORKFLOW-INJECT-END -->"
+    },
+    {
+      "path": "AGENTS.md",
+      "snippet": "# AGENTS.md\n\n## Project Workflow Context\n\n- Workflow project type: `brownfield`\n- Workflow track: `lite`\n- Primary flow: `/workflow-status --sync` \u2192 follow single next action.\n- Major steps in fresh sessions: `/plan`, `/cook`, `/fix`, `/test`, `/code-review`.\n\n## Project Context\n\n- Full context: `docs/project-context.md`\n- Architecture: `docs/project-architecture.md`\n- Spec & acceptance criteria: `docs/project-spec.md`\n\n## Non-Negotiable Engineering Guardrails\n\n<!-- WORKFLOW-GUARDRAILS-START -->\n1. No hard-coded secrets/config:\n- Never hard-code API keys, tokens, passwords, DSN, or env-specific endpoints.\n- Use environment variables or secure config providers.\n2. Lint and conventions are mandatory:\n- Do not mark work done unless lint/style/convention checks pass.\n3. Typecheck and build are mandatory when applicable:\n- Changes that affect typed/buildable code must pass typecheck and build.\n4. Tests are mandatory when applicable:\n- New code and changed behavior require passing tests for impacted scope.\n5. Security baseline is mandatory:\n- Run secret scan and dependency audit before release/review sign-off.\n6. Evidence before completion claim:\n- Never claim \"done\" without command outputs showing pass status.\n<!-- WORKFLOW-GUARDRAILS-END -->\n\n<!-- WORKFLOW-INJECT-START -->\n## Workflow Inject (Auto)\n- Updated at: `2026-10-12T07:09:48+00:00`\n- Project type: `brownfield`\n- Track: `lite`\n- Session guidance: start a fresh session for major workflow steps.\n<!-- WORKFLOW-INJECT-END -->"
+    },
+    {
+      "path": "XKeyIM/README.md",
+      "snippet": "# XKeyIM - Input Method Kit Vietnamese\n\nXKeyIM l\u00e0 Input Method s\u1eed d\u1ee5ng Input Method Kit (IMKit) c\u1ee7a Apple, cung c\u1ea5p tr\u1ea3i nghi\u1ec7m g\u00f5 ti\u1ebfng Vi\u1ec7t m\u01b0\u1ee3t m\u00e0 h\u01a1n trong Terminal v\u00e0 IDE.\n\n## \u01afu \u0111i\u1ec3m so v\u1edbi CGEvent injection\n\n| Aspect | CGEvent (XKey) | IMKit (XKeyIM) |\n|--------|----------------|----------------|\n| Flickering | C\u00f3 th\u1ec3 x\u1ea3y ra | Kh\u00f4ng c\u00f3 |\n| Terminal support | C\u1ea7n tune timing | Native support |\n| Setup | Kh\u00f4ng c\u1ea7n | C\u1ea7n enable trong System Settings |\n\n## Bundle Identifiers\n\n| Component | Bundle ID |\n|-----------|-----------|\n| XKey (main app) | `com.codetay.XKey` |\n| XKeyIM (input method) | `com.codetay.inputmethod.XKey` |\n| App Group | `group.com.codetay.xkey` |\n\n> **L\u01b0u \u00fd:** Bundle ID c\u1ee7a Input Method c\u1ea7n c\u00f3 format `*.inputmethod.*` \u0111\u1ec3 macOS nh\u1eadn di\u1ec7n \u0111\u00fang.\n\n## C\u00e0i \u0111\u1eb7t\n\n### C\u00e1ch 1: T\u1eeb XKey Settings\n1. M\u1edf XKey Settings \u2192 N\u00e2ng cao\n2. B\u1eadt \"IMKit Mode\"\n3. Click \"C\u00e0i \u0111\u1eb7t XKeyIM...\"\n4. L\u00e0m theo h\u01b0\u1edbng d\u1eabn \u0111\u1ec3 copy XKeyIM.app v\u00e0o `~/Library/Input Methods/`\n\n### C\u00e1ch 2: Manual\n1. Build XKeyIM target trong Xcode\n2. Copy `XKeyIM.app` v\u00e0o `~/Library/Input Methods/`\n3. Logout/Login l\u1ea1i\n4. M\u1edf System Settings \u2192 Keyboard \u2192 Input Sources\n5. Click \"+\" v\u00e0 th\u00eam \"XKey Vietnamese\"\n\n## C\u1ea5u tr\u00fac Project\n\n```\nXKeyIM/\n\u251c\u2500\u2500 Info.plist                  # IMKit configuration\n\u251c\u2500\u2500 XKeyIM.entitlements         # Entitlements for debug build\n\u251c\u2500\u2500 XKeyIMRelease.entitlements  # Entitlements for release build\n\u251c\u2500\u2500 main.swift                  # Entry point\n\u251c\u2500\u2500 XKeyIMController.swift      # IMKInputController subclass\n\u251c\u2500\u2500 en.lproj/\n\u2502   \u2514\u2500\u2500 InfoPlist.strings       # English localization\n\u251c\u2500\u2500 vi.lproj/\n\u2502   \u2514\u2500\u2500 InfoPlist.strings       # Vietnamese localization\n\u2514\u2500\u2500 README.md                   # This file\n```\n\n## Build Instructions\n\n### B\u01b0\u1edbc 1: T\u1ea1o XKeyIM Target trong Xcode\n\n1. M\u1edf `XKey.xcodeproj` trong Xcode\n2. File \u2192 New \u2192 Target...\n3. Ch\u1ecdn **macOS** \u2192 **App** \u2192 Next\n4. C\u1ea5u h\u00ecnh:\n   - Product Name: `XKeyIM`\n   - Bundle Identifier: `com.codetay.inputmethod.XKey`\n   - Language: Swift\n   - User Interface: None\n5. Click **Finish**\n\n### B\u01b0\u1edbc 2: C\u1ea5u h\u00ecnh Target Settings\n\n1. Ch\u1ecdn **XKeyIM target** trong Project Navigator\n\n2. Tab **General**:\n   - Bundle Identifier: `com.codetay.inputmethod.XKey`\n   - Minimum Deployments: macOS 12.0+\n\n3. Tab **Build Settings**:\n   - **Info.plist File** = `XKeyIM/Info.plist`\n   - **Code Signing Entitlements** = `XKeyIM/XKeyIMRelease.entitlements` (cho Release)\n\n4. Tab **Signing & Capabilities**:\n   - Ch\u1ecdn Team\n   - Click **+ Capability** \u2192 Th\u00eam **App Groups**\n   - Ch\u1ecdn `group.com.codetay.inputmethod.XKey`\n\n### B\u01b0\u1edbc 3: Setup App Group trong Apple Developer Portal\n\n1. \u0110\u0103ng nh\u1eadp https://developer.apple.com\n2. Certificates, Identifiers & Profiles \u2192 Identifiers\n\n**T\u1ea1o App Group (n\u1ebfu ch\u01b0a c\u00f3):**\n1. Click \"+\" \u2192 App Groups\n2. Description: `XKey Shared Settings`\n3. Identifier: `group.com.codetay.inputmethod.XKey`\n\n**T\u1ea1o App ID cho XKeyIM:**\n1. Click \"+\" \u2192 App IDs \u2192 App\n2. Platform: macOS\n3. Description: `XKey Input Method`\n4. Bundle ID: `com.codetay.inputmethod.XKey`\n5. Capabilities: \u2705 App Groups\n6. Ch\u1ecdn `group.com.codetay.inputmethod.XKey`\n\n**T\u1ea1o Provisioning Profile:**\n1. Profiles \u2192 Click \"+\"\n2. Ch\u1ecdn \"macOS App Development\" ho\u1eb7c \"Developer ID Application\"\n3. Ch\u1ecdn App ID: `com.codetay.inputmethod.XKey`\n4. Ch\u1ecdn certificate v\u00e0 devices\n5. Download v\u00e0 double-click \u0111\u1ec3 install\n\n### B\u01b0\u1edbc 4: Th\u00eam Source Files v\u00e0o Target\n\nXKeyIM c\u1ea7n d\u00f9ng chung code engine v\u1edbi XKey. Trong Xcode:\n\n1. Ch\u1ecdn c\u00e1c file trong **Project Navigator**\n2. M\u1edf **File Inspector** (panel b\u00ean ph\u1ea3i)\n3. Trong section **Target Membership**, check \u2705 **XKeyIM**\n\n**C\u00e1c file c\u1ea7n check Target Membership:**\n```\nXKey/Core/Engine/\n\u251c\u2500\u2500 VNEngine.swift           \u2705\n\u251c\u2500\u2500 VNCharacter.swift        \u2705\n\u251c\u2500\u2500 SpellChecker.swift       \u2705\n\u2514\u2500\u2500 ... (c\u00e1c file engine kh\u00e1c)\n\nXKey/Core/Models/\n\u251c\u2500\u2500 InputMethod.swift        \u2705\n\u251c\u2500\u2500 CodeTable.swift          \u2705\n\u2514\u2500\u2500 ... (c\u00e1c model c\u1ea7n thi\u1ebft)\n```\n\n### B\u01b0\u1edbc 5: Build\n\n**S\u1eed d\u1ee5ng build script:**\n```bash\ncd XKey\n./build_release.sh\n```\n\n**Ho\u1eb7c build th\u1ee7 c\u00f4ng:**\n```bash\nxcodebuild -project XKey.xcodeproj \\\n  -scheme XKeyIM \\\n  -configuration Release \\\n  build\n```\n\n### B\u01b0\u1edbc 6: Install\n\n```bash\n# Copy v\u00e0o Input Methods\ncp -R Release/XKeyIM.app ~/Library/Input\\ Methods/\n\n# Logout/Login \u0111\u1ec3 macOS nh\u1eadn di\u1ec7n\n```\n\n### B\u01b0\u1edbc 7: Enable Input Source\n\n1. M\u1edf **System Settings** \u2192 **Keyboard** \u2192 **Input Sources**\n2. Click **Edit...** \u2192 **+**\n3. T\u00ecm \"Vietnamese\" \u2192 Ch\u1ecdn \"XKey Vietnamese\"\n4. Click **Add**\n\n## Info.plist Configuration\n\n```xml\n<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<!DOCTYPE plist PUBLIC \"-//Apple//DTD PLIST 1.0//EN\" \"http://www.apple.com/DTDs/PropertyList-1.0.dtd\">\n<plist version=\"1.0\">\n<dict>\n    <key>CFBundleIdentifier</key>\n    <string>com.codetay.inputmethod.XKey</string>\n    \n    <key>CFBundleDisplayName</key>\n    <string>XKey Vietnamese</string>\n    \n    <key>InputMethodConnectionName</key>\n    <string>XKeyIM_Connection</string>\n    \n    <key>InputMethodServerControllerClass</key>\n    <string>XKeyIMController</string>\n    \n    <key>InputMethodServerDelegateClass</key>"
+    }
+  ]
+}
